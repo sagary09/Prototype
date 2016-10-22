@@ -1,6 +1,9 @@
   /*Nav*/
 .navIcon{
 image: url("img/siren.svg");
+}
+.page{
+background-color: white;
 
 }
 .logo{
@@ -49,20 +52,33 @@ margin-top: -10px;
   outline: 0;
   background: #312e3e;
   width: 100%;
-  border-style: solid;
-  border-width: thin;
-  border-color: #898ba8;
   border-radius:15px;
+  border-style: none;
   padding: 15px;
   color: #FFFFFF;
   font-size: 14px;
-  -webkit-transition: all 0.3 ease;
-  transition: all 0.3 ease;
   cursor: pointer;
 }
 .form button:hover,.form button:active,.form button:focus {
-  background: #43A047;
+  background: #898ba8;
 }
-.content-block{
+.cont-bottom{
+  text-align: center;
+  color: white;
   background-color: #312e3e;
+  margin: auto;
+}
+.cont-bottom button{
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  outline: 0;
+  text-align: center;
+  width: 60%;
+  border-radius:15px;
+  border-style: none;
+  padding: 15px;
+  color: #FFFFFF;
+  font-size: 14px;
+  cursor: pointer;
+  background: #898ba8;
 }
