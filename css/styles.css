@@ -1,4 +1,18 @@
 /*Nav*/
+/*colors*/
+/*Typography*/
+/*UI*/
+.buttonStyle {
+  text-align: center;
+  width: 100%;
+  border-radius: 15px;
+  border-style: none;
+  padding: 15px;
+  color: #FFFFFF;
+  font-size: 14px;
+  outline: 0;
+}
+/*Sign in*/
 .navIcon {
   image: url("img/siren.svg");
 }
@@ -13,7 +27,7 @@
   padding-top: 10px;
 }
 h3 {
-  color: #898ba8;
+  color: #898BA8;
   font-size: 17px;
   font-family: 'Roboto', sans-serif;
   font-weight: 400;
@@ -21,63 +35,73 @@ h3 {
   margin-top: -10px;
 }
 .form {
-  position: relative;
-  z-index: 1;
   background: #FFFFFF;
   max-width: 500px;
-  margin: 0 auto 100px;
-  padding: 45px;
+  margin: 0;
+  padding: 0px 20px 0px 20px;
   text-align: center;
 }
 .form input {
-  font-family: "Roboto", sans-serif;
+  font-family: 'Roboto', sans-serif;
   font-weight: 400;
-  width: 100%;
-  border-style: solid;
-  border-width: thin;
-  border-color: #898ba8;
-  border-radius: 15px;
-  margin: 0 0 15px;
-  padding: 15px;
-  margin-left: 0;
-  box-sizing: border-box;
-  font-size: 14px;
-}
-.form button {
-  font-family: "Roboto", sans-serif;
-  font-weight: 400;
-  outline: 0;
-  background: #312e3e;
+  text-align: center;
   width: 100%;
   border-radius: 15px;
   border-style: none;
   padding: 15px;
   color: #FFFFFF;
   font-size: 14px;
-  cursor: pointer;
+  outline: 0;
+  text-align: left;
+  color: #898BA8;
+  border-style: solid;
+  border-width: thin;
+  border-color: #898BA8;
+  margin: 0 0 15px;
+  margin-left: 0;
+  box-sizing: border-box;
 }
-.form button:hover,
+.form button {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  text-align: center;
+  width: 100%;
+  border-radius: 15px;
+  border-style: none;
+  padding: 15px;
+  font-size: 14px;
+  outline: 0;
+  background: #312e3e;
+  color: #FFFFFF;
+}
+.form button a:link {
+  color: white;
+}
 .form button:active,
 .form button:focus {
-  background: #898ba8;
+  background: #898BA8;
 }
 .cont-bottom {
   text-align: center;
   color: white;
-  background-color: #312e3e;
   margin: auto;
 }
 .cont-bottom button {
-  font-family: "Roboto", sans-serif;
+  font-family: 'Roboto', sans-serif;
   font-weight: 400;
-  outline: 0;
   text-align: center;
-  width: 60%;
+  width: 100%;
   border-radius: 15px;
   border-style: none;
   padding: 15px;
-  color: #FFFFFF;
   font-size: 14px;
-  cursor: pointer;
-  background: #898ba8;
+  outline: 0;
+  width: 60%;
+  color: #FFFFFF;
+  background: #898BA8;
 }
+.content-block {
+  background-color: #312e3e;
+  padding: 50px 0px 50px 0px;
+}
+/*Notes*/

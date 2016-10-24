@@ -1,86 +1,107 @@
 //out: styles.css
 /*Nav*/
-@bandaid:#898ba8;
+/*colors*/
+@bandaid:#898BA8;
+@blood: #C73340;
+@stretcher:#9CA4BE;
+@midnight:#312E3E;
+
+/*Typography*/
+.RobotoRegular (){
+  font-family:'Roboto', sans-serif;
+  font-weight: 400;
+}
+.RobotoMedium (){
+  font-family:'Roboto', sans-serif;
+  font-weight: 500;
+}
+.RobotoBold (){
+  font-family:'Roboto', sans-serif;
+  font-weight: 700;
+}
+/*UI*/
+.buttonStyle{
+  text-align: center;
+  width: 100%;
+  border-radius:15px;
+  border-style: none;
+  padding: 15px;
+  color: #FFFFFF;
+  font-size: 14px;
+  outline: 0;
+}
+
+/*Sign in*/
+
 .navIcon{
-image: url("img/siren.svg");
+  image: url("img/siren.svg");
 }
 .page{
-background-color: white;
+  background-color: white;
 
 }
 .logo{
-display: block;
-margin: auto;
-width:180px;
-height: auto;
-padding-top: 10px;
+  display: block;
+  margin: auto;
+  width:180px;
+  height: auto;
+  padding-top: 10px;
 
 }
 h3 {
-color: @bandaid ;
-font-size:17px;
-font-family:'Roboto', sans-serif;
-font-weight: 400;
-text-align: center;
-margin-top: -10px;
+  color: @bandaid ;
+  font-size:17px;
+  .RobotoRegular;
+  text-align: center;
+  margin-top: -10px;
 }
 
 .form {
-position: relative;
-z-index: 1;
-background: #FFFFFF;
-max-width: 500px;
-margin: 0 auto 100px;
-padding: 45px;
-text-align: center;
-}
-.form input {
-font-family: "Roboto", sans-serif;
-font-weight: 400;
-width: 100%;
-border-style: solid;
-border-width: thin;
-border-color: @bandaid;
-border-radius:15px;
-margin: 0 0 15px;
-padding: 15px;
-margin-left: 0;
-box-sizing: border-box;
-font-size: 14px;
-}
-.form button {
-font-family: "Roboto", sans-serif;
-font-weight: 400;
-outline: 0;
-background: #312e3e;
-width: 100%;
-border-radius:15px;
-border-style: none;
-padding: 15px;
-color: #FFFFFF;
-font-size: 14px;
-cursor: pointer;
-}
-.form button:hover,.form button:active,.form button:focus {
-background: @bandaid;
+  background: #FFFFFF;
+  max-width: 500px;
+  margin: 0;
+  padding: 0px 20px 0px 20px;
+  text-align: center;
+  input {
+    .RobotoRegular;
+    .buttonStyle;
+    text-align: left;
+    color: @bandaid;
+    border-style: solid;
+    border-width: thin;
+    border-color: @bandaid;
+    margin: 0 0 15px;
+    margin-left: 0;
+    box-sizing: border-box;
+  }
+  button {
+    .RobotoRegular;
+    .buttonStyle;
+    outline: 0;
+    background: #312e3e;
+    color: #FFFFFF;
+    a:link{
+      color:white;
+    }
+    &:active, &:focus {
+      background: @bandaid;
+    }
+  }
 }
 .cont-bottom{
-text-align: center;
-color: white;
+  text-align: center;
+  color: white;
+  margin: auto;
+  button{
+    .RobotoRegular;
+    .buttonStyle;
+    width: 60%;
+    color: #FFFFFF;
+    background: @bandaid;
+  }
+}
+.content-block{
 background-color: #312e3e;
-margin: auto;
+padding: 50px 0px 50px 0px;
 }
-.cont-bottom button{
-font-family: "Roboto", sans-serif;
-font-weight: 400;
-outline: 0;
-text-align: center;
-width: 60%;
-border-radius:15px;
-border-style: none;
-padding: 15px;
-color: #FFFFFF;
-font-size: 14px;
-cursor: pointer;
-background: @bandaid;
-}
+/*Notes*/
