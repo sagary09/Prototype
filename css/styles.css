@@ -13,9 +13,6 @@
   outline: 0;
 }
 /*Sign in*/
-.navIcon {
-  image: url("img/siren.svg");
-}
 .page {
   background-color: white;
 }
@@ -122,13 +119,40 @@ h3 {
   text-transform: none;
 }
 .settings {
-  width: 34px;
-  height: 34px;
+  width: 40px;
+  height: 40px;
+  background-repeat: no-repeat;
   background-image: url("../img/settings.svg");
 }
 .add {
-  width: 34px;
-  height: 34px;
+  width: 40px;
+  height: 40px;
+  background-repeat: no-repeat;
   background-image: url("../img/add.svg");
 }
-/*Notes*/
+/*Bottom Nav*/
+.cases {
+  width: 40px;
+  height: 40px;
+  background-repeat: no-repeat;
+  background-image: url("../img/siren_red.svg");
+}
+.notes {
+  width: 40px;
+  height: 40px;
+  background-repeat: no-repeat;
+  background-image: url("../img/notes.svg");
+}
+.profile {
+  width: 40px;
+  height: 40px;
+  background-repeat: no-repeat;
+  background-image: url("../img/profile.svg");
+}
+.tabbar-label {
+  font-size: 14px;
+  color: #898BA8;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  text-transform: uppercase;
+}
