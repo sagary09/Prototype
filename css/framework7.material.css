@@ -2071,7 +2071,7 @@ html:not(.watch-active-state) .chip .chip-delete:active,
 }
 /* === Content Block === */
 .content-block {
-  margin: 32px 0;
+  margin:0;
   padding: 0 16px;
   box-sizing: border-box;
 }

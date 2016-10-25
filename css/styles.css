@@ -103,6 +103,10 @@ h3 {
   padding: 50px 0px 80px 0px;
 }
 /*header*/
+.navbar {
+  background-color: white;
+  height: 55px;
+}
 .navTitle {
   font-family: 'Roboto', sans-serif;
   font-weight: 700;
@@ -129,6 +133,43 @@ h3 {
   height: 40px;
   background-repeat: no-repeat;
   background-image: url("../img/add.svg");
+}
+/*Cases Empty Screen Body*/
+.content-block {
+  margin: 0;
+}
+.emptyScreen {
+  margin-top: 80px;
+  margin-bottom: 80px;
+}
+.emptyScreen .ambulance {
+  width: 100px;
+  height: auto;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+.emptyScreen .line1 {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
+  font-size: 17px;
+  color: #898BA8;
+  text-align: center;
+  margin-bottom: -10px;
+  margin-top: -10px;
+}
+.emptyScreen .line2 {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  color: #898BA8;
+  font-size: 14px;
+  text-align: center;
+}
+.emptyScreen .addSmall {
+  width: 30px;
+  height: auto;
+  display: inline-flex;
+  margin-bottom: -10px;
 }
 /*Bottom Nav*/
 .cases {
@@ -158,4 +199,11 @@ h3 {
   font-family: 'Roboto', sans-serif;
   font-weight: 400;
   text-transform: uppercase;
+  height: 10px;
+}
+.toolbar {
+  left: 0;
+  bottom: 10;
+  position: fixed;
+  background-color: white;
 }

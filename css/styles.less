@@ -48,7 +48,7 @@
 
 .page{
   background-color: white;
-
+  
 }
 .logo{
   display: block;
@@ -118,6 +118,10 @@ padding: 50px 0px 80px 0px;
 }
 
 /*header*/
+.navbar{
+  background-color: white;
+  height:55px;
+}
 .navTitle{
   .RobotoBold;
   text-align: center;
@@ -139,6 +143,41 @@ padding: 50px 0px 80px 0px;
   .topIcon-size;
   background-image: url("../img/add.svg");
 }
+/*Cases Empty Screen Body*/
+.content-block{
+  margin:0;
+}
+.emptyScreen{
+  margin-top: 80px;
+  margin-bottom: 80px;
+  .ambulance{
+    width:100px;
+    height:auto;
+    display:block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .line1{
+    .RobotoMedium;
+    font-size: 17px;
+    color:@bandaid;
+    text-align: center;
+    margin-bottom: -10px;
+    margin-top: -10px;
+  }
+  .line2{
+    .RobotoRegular;
+    color:@bandaid;
+    font-size: 14px;
+    text-align: center;
+  }
+  .addSmall{
+    width: 30px;
+    height: auto;
+    display:inline-flex;
+    margin-bottom: -10px;
+  }
+}
 /*Bottom Nav*/
 
 .cases{
@@ -159,4 +198,11 @@ padding: 50px 0px 80px 0px;
   color:@bandaid;
   .RobotoRegular;
   text-transform: uppercase;
+  height: 10px;
+}
+.toolbar{
+  left: 0;
+  bottom: 10;
+  position:fixed;
+  background-color: white;
 }
