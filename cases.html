@@ -1,23 +1,53 @@
+
+<!-- We don't need full layout here, because this page will be parsed with Ajax-->
 <!-- Bottom ToolBar-->
-<div class="toolbar tabbar tabbar-labels">
-<div class="toolbar-inner">
-    <a href="#tab1" class="tab-link active">
-        <i class="navIcon"></i>
-        <span class="tabbar-label">Cases</span>
-    </a>
-    <a href="#tab2" class="tab-link">
-        <i class="icon demo-icon-2">
-            <span class="badge bg-red">5</span>
-        </i>
-        <span class="tabbar-label">Label 2</span>
-    </a>
-    <a href="#tab3" class="tab-link">
-        <i class="icon demo-icon-3"></i>
-        <span class="tabbar-label">Label 3</span>
-    </a>
-    <a href="#tab4" class="tab-link">
-        <i class="icon demo-icon-4"></i>
-        <span class="tabbar-label">Label 4</span>
-    </a>
+<div class="navbar">
+  <div class="navbar-inner">
+    <div class="left"><a href="#" class="back link"> <i class="icon icon-back"></i><span>Back</span></a></div>
+    <div class="center sliding">Form</div>
+    <div class="right">
+      <!-- Right link contains only icon - additional "icon-only" class--><a href="#" class="link icon-only open-panel"> <i class="icon icon-bars"></i></a>
+    </div>
+  </div>
 </div>
+<div class="pages">
+  <!-- Page, data-page contains page name-->
+  <div data-page="form" class="page">
+    <!-- Scrollable page content-->
+    <div class="page-content">
+      <div class="navbar">
+        <div class="navbar-inner">
+          <div class="left">
+            <a href="#" class="link icon-only">
+              <i class="settings"></i>
+            </a>
+          </div>
+          <div class="navTitle">Cases<br />
+            <span class="date">August 23, 2016</span>
+          </div>
+          <div class="right">
+            <a href="#" class="link icon-only">
+              <i class="add"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    <div class="toolbar tabbar tabbar-labels">
+      <div class="toolbar-inner">
+          <a href="#tab1" class="tab-link active">
+              <i class="cases"></i>
+              <span class="tabbar-label">Cases</span>
+          </a>
+          <a href="#tab2" class="tab-link">
+              <i class="notes"></i>
+              <span class="tabbar-label">Notes</span>
+          </a>
+          <a href="#tab3" class="tab-link">
+              <i class="profile"></i>
+              <span class="tabbar-label">Profile</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
 </div>
