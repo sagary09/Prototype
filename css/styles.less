@@ -31,9 +31,15 @@
   outline: 0;
 }
 
-.icon-size(){
+.topIcon-size(){
   width: 40px;
   height: 40px;
+  background-repeat: no-repeat;
+}
+.bottomIcon-size(){
+  width:40px;
+  height: 40px;
+  background-size: 38px 38px;
   background-repeat: no-repeat;
 }
 
@@ -126,26 +132,28 @@ padding: 50px 0px 80px 0px;
   text-transform: none;
 }
 .settings{
-  .icon-size;
+  .topIcon-size;
   background-image: url("../img/settings.svg");
 }
 .add{
-  .icon-size;
+  .topIcon-size;
   background-image: url("../img/add.svg");
 }
 /*Bottom Nav*/
+
 .cases{
-  .icon-size;
-  background-image:url("../img/siren_red.svg");
+  .bottomIcon-size;
+  background-image: url("../img/siren2.svg");
 }
 .notes{
-  .icon-size;
+  .bottomIcon-size;
   background-image:url("../img/notes.svg");
 }
 .profile{
-  .icon-size;
+  .bottomIcon-size;
   background-image:url("../img/profile.svg");
 }
+
 .tabbar-label{
   font-size: 14px;
   color:@bandaid;
