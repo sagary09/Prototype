@@ -137,6 +137,13 @@ h3 {
 /*Cases Empty Screen Body*/
 .content-block {
   margin: 0;
+  border: 0;
+}
+.content-block ::after {
+  display: none;
+}
+.content-block ::before {
+  display: none;
 }
 .emptyScreen {
   margin-top: 80px;
@@ -175,23 +182,26 @@ h3 {
 .cases {
   width: 40px;
   height: 40px;
-  background-size: 38px 38px;
+  background-size: 40px 40px;
   background-repeat: no-repeat;
   background-image: url("../img/siren2.svg");
 }
 .notes {
   width: 40px;
   height: 40px;
-  background-size: 38px 38px;
+  background-size: 40px 40px;
   background-repeat: no-repeat;
   background-image: url("../img/notes.svg");
 }
 .profile {
   width: 40px;
   height: 40px;
-  background-size: 38px 38px;
+  background-size: 40px 40px;
   background-repeat: no-repeat;
   background-image: url("../img/profile.svg");
+}
+.tabbar-labels {
+  height: 55px;
 }
 .tabbar-label {
   font-size: 14px;
@@ -199,7 +209,6 @@ h3 {
   font-family: 'Roboto', sans-serif;
   font-weight: 400;
   text-transform: uppercase;
-  height: 10px;
 }
 .toolbar {
   left: 0;

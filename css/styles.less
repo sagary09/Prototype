@@ -39,16 +39,14 @@
 .bottomIcon-size(){
   width:40px;
   height: 40px;
-  background-size: 38px 38px;
+  background-size: 40px 40px;
   background-repeat: no-repeat;
 }
 
 /*Sign in*/
 
-
 .page{
   background-color: white;
-  
 }
 .logo{
   display: block;
@@ -146,6 +144,13 @@ padding: 50px 0px 80px 0px;
 /*Cases Empty Screen Body*/
 .content-block{
   margin:0;
+  border:0;
+  ::after{
+    display: none;
+  }
+  ::before{
+    display: none;
+  }
 }
 .emptyScreen{
   margin-top: 80px;
@@ -192,13 +197,14 @@ padding: 50px 0px 80px 0px;
   .bottomIcon-size;
   background-image:url("../img/profile.svg");
 }
-
+.tabbar-labels{
+  height:55px;
+}
 .tabbar-label{
   font-size: 14px;
   color:@bandaid;
   .RobotoRegular;
   text-transform: uppercase;
-  height: 10px;
 }
 .toolbar{
   left: 0;
