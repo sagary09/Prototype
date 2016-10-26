@@ -142,11 +142,11 @@ padding: 50px 0px 80px 0px;
   background-image: url("../img/add.svg");
 }
 /*Cases Empty Screen Body*/
-.content-block{
+.content-block {
   margin:0;
   border:0;
   ::after{
-    display: none;
+    display:none;
   }
   ::before{
     display: none;
@@ -211,4 +211,31 @@ padding: 50px 0px 80px 0px;
   bottom: 10;
   position:fixed;
   background-color: white;
+}
+/*Popup*/
+
+.close{
+  .topIcon-size;
+  background-image: url("../img/close.svg");
+}
+.popup-overlay{
+  width:0;
+  height:0;
+}
+
+.form-list-block .list-block{
+  ul{
+    list-style-type: none;
+  }
+  input{
+    .RobotoRegular;
+    font-size: 20px;
+    color:@stretcher;
+    border-style: none;
+    margin:10px;
+    background: none;
+  }
+}
+.list-block ul:before{
+  display:none;
 }
