@@ -271,3 +271,58 @@ h3 {
   font-size: 17px;
   text-align: center;
 }
+/*Added Case*/
+.added_case_button {
+  margin: auto;
+  background-color: #312E3E;
+  width: 330px;
+  left: 20px;
+  height: 40px;
+  display: inline-block;
+  text-decoration: none;
+  position: absolute;
+  text-align: center;
+  font-size: 16px;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  color: white;
+  margin-top: 40px;
+  padding-bottom: 10px;
+  padding-top: 10px;
+  -webkit-border-top-right-radius: 15px;
+  -webkit-border-top-left-radius: 15px;
+  -moz-border-radius-topright: 15px;
+  -moz-border-radius-topleft: 15px;
+  border-top-right-radius: 15px;
+  border-top-left-radius: 15px;
+}
+.added_case_button::after {
+  display: block;
+  background-color: #C73340;
+  color: white;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  font-size: 12px;
+  text-transform: capitalize;
+  content: "Incomplete";
+  width: 330px;
+  height: 35px;
+  position: absolute;
+  left: 0px;
+  top: 52px;
+  line-height: 3;
+  z-index: 1;
+  -webkit-border-bottom-left-radius: 15px;
+  -webkit-border-bottom-right-radius: 15px;
+  -moz-border-radius-bottomleft: 15px;
+  -moz-border-radius-bottomright: 15px;
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+}
+/*Events Empty Screen*/
+.icon-back {
+  width: 40px;
+  height: 40px;
+  background-repeat: no-repeat;
+  background-image: url("../img/back.svg");
+}
