@@ -303,7 +303,7 @@ h3 {
   font-family: 'Roboto', sans-serif;
   font-weight: 400;
   font-size: 12px;
-  text-transform: capitalize;
+  text-transform: uppercase;
   content: "Incomplete";
   width: 330px;
   height: 35px;
@@ -324,11 +324,41 @@ h3 {
   width: 40px;
   height: 40px;
   background-repeat: no-repeat;
+  width: 60px;
+  height: 60px;
+  margin-left: -20px;
   background-image: url("../img/back.svg");
 }
+.back {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  color: #9CA4BE;
+  display: inline-block;
+  font-size: 14px;
+  margin-left: 45px;
+  margin-top: 8px;
+  text-decoration: none;
+}
 .add_event {
-  width: 40px;
-  height: 40px;
-  background-repeat: no-repeat;
+  display: inline-block;
+  width: 85px;
+  height: 85px;
+  float: right;
+  margin-right: 10px;
+  margin-top: 195px;
   background-image: url("../img/Add_event_button.svg");
+}
+.event-navTitle {
+  margin-right: 40px;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 700;
+  text-align: center;
+  font-size: 14px;
+  text-transform: uppercase;
+  color: #312E3E;
+}
+.flt_button {
+  background-repeat: no-repeat;
+  width: 300px;
+  height: 300px;
 }
