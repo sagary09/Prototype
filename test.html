@@ -8,19 +8,46 @@
     <div class="page-content">
       <div class="navbar">
         <div class="navbar-inner">
-          <div class="left">
-            <a href="#" class="link">
-              <i class="settings"></i>
+          <div class="left sliding">
+            <a href="added-case.html" class="link">
+              <i class="icon-back">
+                <span class="back">CASES</span>
+              </i>
             </a>
           </div>
-          <div class="navTitle">Cases<br />
-            <span class="date">August 23, 2016</span>
+          <div class="event-navTitle">Events
+            <div class="swiper-pagination">
+            </div>
           </div>
           <div class="right">
-            <a href="#" data-popup=".popup-add"class="link open-popup">
-              <i class="add"></i>
+          </div>
+        </div>
+      </div>
+      <div class="content-block">
+        <div class="content-block-inner event_Cont_block">
+          <p>Bradycardia</p>
+        </div>
+      </div>
+      <div class="swiper-container swiper-init" data-speed="400" data-space-between="40" data-pagination=".swiper-pagination">
+    <!-- Slides wrapper -->
+        <div class="swiper-wrapper">
+        <!-- Events -->
+          <div class="swiper-slide">
+            <div class="content-block">
+              <div class="content-block-inner">
+                <div class="emptyScreen">
+                  <img src="img/medical_kit.svg" class="ambulance" alt="ambulance" />
+                  <p class="line1">Currently no events added</p>
+                  <p class="line2">Click on the <img src="img/Add_event_button.svg" alt="add" class="addSmall"> icon below to add a new case.</p>
+                </div>
+              </div>
+            </div>
+            <a href="#">
+              <i class="add_event"></i>
             </a>
           </div>
+          <div class="swiper-slide">Slide 2</div>
+          <div class="swiper-slide">Slide 3</div>
         </div>
       </div>
     </div>
