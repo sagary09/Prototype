@@ -310,15 +310,7 @@ padding: 50px 0px 80px 0px;
   background-image: url("../img/back.svg");
   font-style: normal;
 }
-.back{
-  .RobotoRegular;
-  color:@stretcher;
-  display: inline-block;
-  font-size: 14px;
-  margin-left: 45px;
-  margin-top: 8px;
-  text-decoration: none;
-}
+
 .add_event{
   display: inline-block;
   width: 85px;
@@ -339,6 +331,8 @@ padding: 50px 0px 80px 0px;
   color: white;
   padding-top: 2px;
   padding-bottom: 2px;
+  line-height: 0.5;
+  height: 35px;
 }
 .flt_button{
   background-repeat: no-repeat;
@@ -348,23 +342,93 @@ padding: 50px 0px 80px 0px;
 .swiper-container {
   height: 100%;
 }
-.swiper-slide {
-  background:#fff;
-}
-.swiper-slide span {
-  text-align:center;
-  display:block;
-  margin:20px;
-  font-size:21px;
-}
 .swiper-pagination{
   position:relative;
+  display: flex;
 }
 .swiper-pagination-bullet{
   display: inline-block;
-  margin-right: 5px;
   text-align: center;
 }
 .swiper-pagination-bullet-active {
   background-color: @blood;
+}
+.swiper-slide {
+  span{
+    text-align: center;
+    display: block;
+    margin-left: 5px;
+    margin-top: 5px;
+    margin-right: 5px;
+    margin-bottom: 0px;
+    font-size: 21px;
+  }
+  .back{
+    .RobotoRegular;
+    color:@stretcher;
+    display: inline-block;
+    font-size: 14px;
+    margin-left: 45px;
+    margin-top: 8px;
+    text-decoration: none;
+  }
+}
+/*Protocol*/
+.protocol-dropdown{
+  color:white;
+  input[type=text]{
+    color:white;
+    .RobotoRegular;
+    margin-bottom: 10px;
+    margin-left: 0px;
+    background-image: url("../img/drop_down.svg");
+    background-repeat: no-repeat;
+    background-position: right;
+    border-style: solid;
+    border-width: thin;
+    border-color: #f2f2f2;
+    padding-right:10px;
+    padding-left: 10px;
+  }
+  ::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+  color: white;
+  .RobotoRegular;
+  font-size: 14px;
+  text-transform: uppercase;
+  }
+  ::-moz-placeholder { /* Firefox 19+ */
+  color: white;
+  .RobotoRegular;
+  font-size: 14px;
+  text-transform: uppercase;
+  }
+  :-ms-input-placeholder { /* IE 10+ */
+    color: white;
+    .RobotoRegular;
+    font-size: 14px;
+    text-transform: uppercase;
+  }
+  :-moz-placeholder { /* Firefox 18- */
+    color: white;
+    .RobotoRegular;
+    font-size: 14px;
+    text-transform: uppercase;
+  }
+}
+.protocol-block{
+  margin-top: 0px;
+  margin-left: -16px;
+  margin-right: -16px;
+  .item-content{
+    background-color: @bandaid;
+    color:white;
+  }
+  .item-input{
+    margin-top: -5px;
+    margin-bottom: -4px;
+    width:96%;
+  }
+}
+#autocomplete-dropdown-all :active{
+  background: @bandaid;
 }

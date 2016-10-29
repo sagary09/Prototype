@@ -9,15 +9,29 @@ var mainView = myApp.addView('.view-main', {
     // Because we use fixed-through navbar we can enable dynamic navbar
     dynamicNavbar: true
 });
+
 var mySwiper = myApp.swiper('.swiper-container', {
     pagination:'.swiper-pagination'
   });
 
+
 // Callbacks to run specific code for specific pages, for example for About page:
-myApp.onPageInit('about', function (page) {
+myApp.onPageInit('test', function (page) {
     // run createContentPage func after link was clicked
-    $$('.create-page').on('click', function () {
-        createContentPage();
+    var protocol =["3001-Airway Obsrtuction"," 3031A-General Cardiac Arrest","4001-Airway Management ", " 4002-Sedation-Assisted Intubation ","  5021A-Bradycardia-Adult"," 5021P-Bradycardia-Pediatric", " 6003-Extremity Trauma"," 6004-Crush Syndrome" ];
+    var autocompleteDropdownAll = myApp.autocomplete({
+        input: '#autocomplete-dropdown-all',
+        openIn: 'dropdown',
+        expandInput: true,
+        source: function (autocomplete, query, render) {
+            var results = [];
+            // Find matched items
+            for (var i = 0; i < protocol.length; i++) {
+                if (protocol[i].toLowerCase().indexOf(query.toLowerCase()) >= 0) results.push(protocol[i]);
+            }
+            // Render items by passing array with result items
+            render(results);
+        }
     });
 });
 
