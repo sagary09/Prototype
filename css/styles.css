@@ -16,6 +16,9 @@
 .page {
   background-color: white;
 }
+.page-content {
+  height: 110%;
+}
 .logo {
   display: block;
   margin: auto;
@@ -462,8 +465,8 @@ h3 {
   margin-bottom: -4px;
   width: 96%;
 }
-#autocomplete-dropdown-all :active {
-  background: #898BA8;
+#autocomplete-dropdown-all {
+  background-color: #898BA8;
 }
 /*Timeline*/
 #timeline {
@@ -481,4 +484,67 @@ h3 {
   height: 100%;
   width: 4px;
   background: #d7e4ed;
+}
+/*Bradycardia Protocol*/
+.check {
+  width: 80%;
+  position: relative;
+  margin: 20px auto;
+  background: white;
+  border-style: solid;
+  border-width: thin;
+  border-color: #898BA8;
+  color: #898BA8;
+  line-height: 2.5;
+}
+.check label {
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  top: 4px;
+  left: 4px;
+  float: left;
+  cursor: pointer;
+  border-radius: 50px;
+  border-style: solid;
+  border-width: thin;
+  border-color: #898BA8;
+  margin-top: 3px;
+  margin-right: 9px;
+}
+.check label:after {
+  content: '';
+  width: 9px;
+  height: 5px;
+  position: absolute;
+  top: 5px;
+  left: 4px;
+  border: 3px solid #8cc63f;
+  border-top: none;
+  border-right: none;
+  background: transparent;
+  opacity: 0;
+  transform: rotate(-45deg);
+}
+.check input[type=checkbox] {
+  visibility: hidden;
+  margin-left: 20px;
+}
+.check input[type=checkbox]:checked + label:after {
+  opacity: 1;
+}
+#text-uppercase {
+  color: #C73340;
+  text-transform: uppercase;
+}
+#text-bold {
+  color: black;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 700;
+}
+.arrow {
+  color: #C73340;
+  font-size: 42px;
+  text-align: center;
+  margin-top: -36px;
 }
