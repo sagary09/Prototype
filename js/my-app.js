@@ -14,11 +14,11 @@ var mySwiper = myApp.swiper('.swiper-container', {
     pagination:'.swiper-pagination'
   });
 
-
 // Callbacks to run specific code for specific pages, for example for About page:
 myApp.onPageInit('test', function (page) {
     // run createContentPage func after link was clicked
     var protocol =["3001-Airway Obsrtuction"," 3031A-General Cardiac Arrest","4001-Airway Management ", " 4002-Sedation-Assisted Intubation ","  5021A-Bradycardia-Adult"," 5021P-Bradycardia-Pediatric", " 6003-Extremity Trauma"," 6004-Crush Syndrome" ];
+    var events =["Assesment","Contact","CPR","Defib","EKG","EPINEPHrine","HPI"]
     var autocompleteDropdownAll = myApp.autocomplete({
         input: '#autocomplete-dropdown-all',
         openIn: 'dropdown',
@@ -28,6 +28,9 @@ myApp.onPageInit('test', function (page) {
             // Find matched items
             for (var i = 0; i < protocol.length; i++) {
                 if (protocol[i].toLowerCase().indexOf(query.toLowerCase()) >= 0) results.push(protocol[i]);
+            }
+            for (var j = 0; j < events.length; j++) {
+                if (events[j].toLowerCase().indexOf(query.toLowerCase()) >= 0) results.push(events[j]);
             }
             // Render items by passing array with result items
             render(results);
