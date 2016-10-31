@@ -486,6 +486,34 @@ h3 {
   background: #d7e4ed;
 }
 /*Bradycardia Protocol*/
+.brady-protocol p {
+  text-align: center;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 700;
+  color: #312E3E;
+  font-size: 14px;
+}
+.brady-protocol button {
+  text-align: center;
+  width: 100%;
+  border-radius: 15px;
+  border-style: none;
+  padding: 15px;
+  color: #FFFFFF;
+  font-size: 14px;
+  outline: 0;
+  background-color: #898BA8;
+  margin-bottom: 60px;
+  margin-left: 20px;
+  width: 90%;
+}
+.brady-protocol button a {
+  color: white;
+  text-align: center;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  font-size: 17px;
+}
 .check {
   width: 80%;
   position: relative;
@@ -495,7 +523,32 @@ h3 {
   border-width: thin;
   border-color: #898BA8;
   color: #898BA8;
-  line-height: 2.5;
+  text-align: left;
+  line-height: 2;
+  padding: 5px 0px 5px 10px;
+  box-shadow: 1px 3px 4px rgba(102, 102, 102, 0.75);
+}
+.check button {
+  text-align: center;
+  width: 100%;
+  border-radius: 15px;
+  border-style: none;
+  padding: 15px;
+  color: #FFFFFF;
+  font-size: 14px;
+  outline: 0;
+  background-color: #898BA8;
+  margin-bottom: 20px;
+  margin-left: 10px;
+  margin-top: 10px;
+  width: 90%;
+}
+.check button a {
+  color: white;
+  text-align: center;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
+  font-size: 14px;
 }
 .check label {
   width: 20px;
@@ -528,7 +581,7 @@ h3 {
 }
 .check input[type=checkbox] {
   visibility: hidden;
-  margin-left: 20px;
+  line-height: .5;
 }
 .check input[type=checkbox]:checked + label:after {
   opacity: 1;
@@ -547,4 +600,65 @@ h3 {
   font-size: 42px;
   text-align: center;
   margin-top: -36px;
+  margin-bottom: -15px;
+}
+.proto_Cont_block {
+  background-color: #C73340;
+  width: 90%;
+  margin: auto;
+  margin-top: 20px;
+}
+.proto_Cont_block p {
+  text-align: center;
+  color: white;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  font-size: 12px;
+}
+.proto_Cont_block span {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+}
+.Y-N_buttons {
+  display: flex;
+  padding: 10px;
+}
+.Y-N_buttons button {
+  text-align: center;
+  width: 100%;
+  border-radius: 15px;
+  border-style: none;
+  padding: 15px;
+  color: #FFFFFF;
+  font-size: 14px;
+  outline: 0;
+  text-transform: uppercase;
+  background-color: #312E3E;
+  color: white;
+  width: 50%;
+  margin: 5px;
+  margin-bottom: 40px;
+  box-shadow: 1px 3px 4px rgba(102, 102, 102, 0.75);
+}
+.Y-N_buttons a {
+  color: white;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  text-transform: uppercase;
+  font-size: 17px;
+}
+.arrow-up {
+  text-align: center;
+}
+.arrow-up img {
+  width: 60px;
+  height: auto;
+}
+.arrow-up p {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  text-align: center;
+  font-size: 14px;
+  color: #312E3E;
 }

@@ -7,7 +7,7 @@
       <section title=".check">
     <!-- step1 -->
         <div class="check">
-          <input type="checkbox" value="None" id="check" name="check" checked />
+          <input type="checkbox" value="None" id="check" name="check"  />
           Initial Patient Contact- Protocol # 201
           <label for="check"></label>
         </div>
@@ -18,8 +18,8 @@
     <!-- step2 -->
       <section title=".check">
         <div class="check">
-          <input type="checkbox" value="None" id="check" name="check" checked />
-          If Patient has severe hypotension or impending cardiac arrest, <span id="text-uppercase">begin Pacing immediately</span>
+          <input type="checkbox" value="None" id="check" name="check"  />
+          If Patient has severe hypotension or impending cardiac arrest,<br /><span id="text-uppercase">begin Pacing immediately</span>
           <label for="check"></label>
         </div>
         <div class="arrow">&#8595;</div>
@@ -28,14 +28,96 @@
     <!-- step3 -->
       <section title=".check">
         <div class="check">
-          <input type="checkbox" value="None" id="check" name="check" checked />
+          <input type="checkbox" value="None" id="check" name="check"  />
           Maintain Airway/ Ventilate, if needed. <span id="text-bold">Administer Oxygen Monitor, ECG &#38; Pulse Oximetry </span>
-          Initiate IV/IO NSS Consider 12-Lead, if available
+        <br />  Initiate IV/IO NSS Consider 12-Lead, if available
           <label for="check"></label>
         </div>
         <div class="arrow">&#8595;</div>
       </section>
     <!-- end step3 -->
+      <div class="content-block">
+        <div class="content-block-inner proto_Cont_block">
+          <p><span>Signs or Symptoms of poor perfusion?<br /></span>
+            (acute altered mental status, ongoing chest pain, hypotension, or signs of shock)</p>
+        </div>
+      </div>
+      <div class="Y-N_buttons">
+        <button><a href="#">Yes</a></button>
+        <button><a href="#">No</a></button>
+      </div>
+
+        <!--part2-->
+    <!-- step1 -->
+      <div class="arrow-up">
+        <img src="img/up_arrow.svg" alt="arrow"></img>
+        <p>Signs/Symptoms of poor perfusion<p>
+      </div>
+      <section title=".check" class="brady-protocol">
+        <div class="check">
+          <input type="checkbox" value="None" id="check" name="check" checked />
+          <span id="text-bold" >Atropine 0.5 mg IV/IO</span>
+          <br />  while preparing Pacer (May repeat if needed to maximum of 3 mg)
+            <label for="check"></label>
+        </div>
+        <p>OR</p>
+      </section>
+    <!-- end step1 -->
+      <section title=".check">
+    <!-- step1 -->
+        <div class="check">
+          <input type="checkbox" value="None" id="check" name="check" checked />
+          <span id="text-bold" >Begin Pacing, Sedation </span>
+          <br />Initial dose if needed
+            <label for="check"></label>
+            <button><a href="#">View Sedation Options</a></button>
+        </div>
+        <div class="arrow">&#8595;</div>
+      </section>
+    <!-- end step1 -->
+      <div class="content-block">
+        <div class="content-block-inner proto_Cont_block">
+          <p>Pacing effective AND SBP > 100 mm/Hg</p>
+        </div>
+      </div>
+      <div class="Y-N_buttons">
+        <button><a href="#">Yes</a></button>
+        <button><a href="#">No</a></button>
+      </div>
+      <!--part2-->
+  <!-- step1 -->
+    <div class="arrow-up">
+      <img src="img/up_arrow.svg" alt="arrow"></img>
+      <p>Pacing not effective OR SBP < 100 mm/Hg<p>
+    </div>
+    <section title=".check" class="brady-protocol">
+      <div class="check">
+        <input type="checkbox" value="None" id="check" name="check" checked />
+        Contact Medical Command
+          <label for="check"></label>
+      </div>
+      <div class="arrow">&#8595;</div>
+    </section>
+    <!-- end step1 -->
+      <section title=".check" class="brady-protocol">
+        <div class="check">
+          <input type="checkbox" value="None" id="check" name="check" checked />
+          <span id="text-bold" >EPINEPHrine9</span>
+          <br />Push dose (diluted) 10-20 mcg boluses or infusion
+            <label for="check"></label>
+        </div>
+        <p>OR</p>
+      </section>
+
+      <section title=".check" class="brady-protocol">
+        <div class="check">
+          <input type="checkbox" value="None" id="check" name="check" checked />
+          <span id="text-bold" >DOPAmine</span>
+          <br />Infusion 10, repeat additional sedation
+            <label for="check"></label>
+        </div>
+        <button><a href="#">Complete Narrative</a></button>
+      </section>
     </div>
   </div>
 </div>

@@ -42,6 +42,9 @@
   background-size: 40px 40px;
   background-repeat: no-repeat;
 }
+.shadow(){
+  box-shadow:1px 3px 4px rgba(102, 102, 102, .75);
+}
 
 /*Sign in*/
 
@@ -455,6 +458,27 @@ padding: 50px 0px 80px 0px;
   background: #d7e4ed;
 }
 /*Bradycardia Protocol*/
+.brady-protocol{
+  p{
+    text-align: center;
+    .RobotoBold;
+    color:@midnight;
+    font-size:14px;
+  }
+  button{
+    .buttonStyle;
+    background-color: @bandaid;
+    margin-bottom: 60px;
+    margin-left: 20px;
+    width: 90%;
+    a{
+      color:white;
+      text-align: center;
+      .RobotoRegular;
+      font-size: 17px;
+    }
+  }
+}
 .check {
   width: 80%;
   position: relative;
@@ -464,7 +488,25 @@ padding: 50px 0px 80px 0px;
   border-width: thin;
   border-color: @bandaid;
   color: @bandaid;
-  line-height: 2.5;
+  text-align: left;
+  line-height: 2;
+  padding: 5px 0px 5px 10px;
+
+  .shadow;
+  button{
+    .buttonStyle;
+    background-color: @bandaid;
+    margin-bottom: 20px;
+    margin-left: 10px;
+    margin-top: 10px;
+    width:90%;
+    a{
+      color:white;
+      text-align: center;
+      .RobotoMedium;
+      font-size: 14px;
+    }
+  }
   label {
     width: 20px;
     height: 20px;
@@ -495,8 +537,8 @@ padding: 50px 0px 80px 0px;
     }
   }
   input[type=checkbox] {
-    visibility:hidden;;
-    margin-left: 20px;
+    visibility:hidden;
+    line-height: .5;
     &:checked + label:after {
       opacity: 1;
     }
@@ -515,4 +557,54 @@ padding: 50px 0px 80px 0px;
   font-size: 42px;
   text-align: center;
   margin-top: -36px;
+  margin-bottom: -15px;
+}
+.proto_Cont_block{
+  background-color: @blood;
+  width:90%;
+  margin:auto;
+  margin-top: 20px;
+  p{
+    text-align: center;
+    color: white;
+    .RobotoRegular;
+    font-size: 12px;
+  }
+  span{
+    .RobotoRegular;
+    font-size: 14px;
+  }
+}
+.Y-N_buttons{
+  display:flex;
+  padding:10px;
+  button{
+    .buttonStyle;
+    text-transform: uppercase;
+    background-color: @midnight;
+    color:white;
+    width:50%;
+    margin:5px;
+    margin-bottom: 40px;
+    .shadow
+  }
+  a{
+    color:white;
+    .RobotoRegular;
+    text-transform: uppercase;
+    font-size: 17px;
+  }
+}
+.arrow-up{
+  text-align: center;
+  img{
+    width:60px;
+    height: auto;
+  }
+  p{
+    .RobotoRegular;
+    text-align: center;
+    font-size: 14px;
+    color:@midnight;
+  }
 }
