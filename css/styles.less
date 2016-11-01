@@ -138,6 +138,7 @@ padding: 50px 0px 80px 0px;
   color:@bandaid;
   font-size: 12px;
   text-transform: none;
+  text-align: center;
 }
 .settings{
   .topIcon-size;
@@ -191,9 +192,17 @@ padding: 50px 0px 80px 0px;
 }
 /*Bottom Nav*/
 
-.cases{
+.cases-active{
   .bottomIcon-size;
   background-image: url("../img/siren_red.svg");
+}
+.notes-active{
+  .bottomIcon-size;
+  background-image:url("../img/notes_red.svg");
+}
+.cases{
+  .bottomIcon-size;
+  background-image:url("../img/siren2.svg");
 }
 .notes{
   .bottomIcon-size;
@@ -316,7 +325,17 @@ padding: 50px 0px 80px 0px;
   background-image: url("../img/back.svg");
   font-style: normal;
 }
-
+.back-text{
+  span{
+    .RobotoRegular;
+    color:@stretcher;
+    display: inline-block;
+    font-size: 14px;
+    margin-left: 45px;
+    margin-top: 8px;
+    text-decoration: none;
+  }
+}
 .add_event{
   display: inline-block;
   width: 85px;
@@ -370,15 +389,15 @@ padding: 50px 0px 80px 0px;
     margin-bottom: 0px;
     font-size: 21px;
   }
-  .back{
-    .RobotoRegular;
-    color:@stretcher;
-    display: inline-block;
-    font-size: 14px;
-    margin-left: 45px;
-    margin-top: 8px;
-    text-decoration: none;
-  }
+}
+#back-text{
+  display: inline-block;
+  margin-left: 45px;
+  margin-top: 8px;
+  margin-right: 5px;
+  margin-bottom: 0px;
+  font-size: 14px;
+  color:@bandaid;
 }
 /*Protocol*/
 .protocol-dropdown{
@@ -491,7 +510,6 @@ padding: 50px 0px 80px 0px;
   text-align: left;
   line-height: 2;
   padding: 5px 0px 5px 10px;
-
   .shadow;
   button{
     .buttonStyle;
@@ -586,7 +604,7 @@ padding: 50px 0px 80px 0px;
     width:50%;
     margin:5px;
     margin-bottom: 40px;
-    .shadow
+    .shadow;
   }
   a{
     color:white;
@@ -606,5 +624,57 @@ padding: 50px 0px 80px 0px;
     text-align: center;
     font-size: 14px;
     color:@midnight;
+  }
+}
+/*Notes*/
+.edit{
+  .topIcon-size;
+  background-image: url("../img/edit.svg");
+}
+.notes-box{
+  border-style: solid;
+  border-color: @stretcher;
+  border-width: thin;
+  padding:10px;
+  margin: 10px;
+}
+.notes-inner{
+  color:@midnight;
+  .RobotoRegular;
+  font-size: 17px;
+}
+.list-block-notes{
+  .item-inner:after{
+  display:none;
+  }
+  ul:after{
+    display:none;
+  }
+}
+.nav-left{
+  margin-left:-30px;
+}
+
+.profile-img{
+  margin-top: 20px;
+  .prof-img{
+    width:100%;
+    height:auto;
+    display:block;
+    margin-left:-40px;
+  }
+}
+.profile-info{
+  h3{
+    .RobotoBold;
+    color:@midnight;
+    font-size: 20px;
+    text-align: center;
+  }
+  p{
+    .RobotoRegular;
+    color:@bandaid;
+    font-size: 14px;
+    text-align: center;
   }
 }

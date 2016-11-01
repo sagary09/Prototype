@@ -124,6 +124,7 @@ h3 {
   color: #898BA8;
   font-size: 12px;
   text-transform: none;
+  text-align: center;
 }
 .settings {
   width: 40px;
@@ -182,12 +183,26 @@ h3 {
   margin-bottom: -10px;
 }
 /*Bottom Nav*/
-.cases {
+.cases-active {
   width: 40px;
   height: 40px;
   background-size: 40px 40px;
   background-repeat: no-repeat;
   background-image: url("../img/siren_red.svg");
+}
+.notes-active {
+  width: 40px;
+  height: 40px;
+  background-size: 40px 40px;
+  background-repeat: no-repeat;
+  background-image: url("../img/notes_red.svg");
+}
+.cases {
+  width: 40px;
+  height: 40px;
+  background-size: 40px 40px;
+  background-repeat: no-repeat;
+  background-image: url("../img/siren2.svg");
 }
 .notes {
   width: 40px;
@@ -333,6 +348,16 @@ h3 {
   background-image: url("../img/back.svg");
   font-style: normal;
 }
+.back-text span {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  color: #9CA4BE;
+  display: inline-block;
+  font-size: 14px;
+  margin-left: 45px;
+  margin-top: 8px;
+  text-decoration: none;
+}
 .add_event {
   display: inline-block;
   width: 85px;
@@ -390,15 +415,14 @@ h3 {
   margin-bottom: 0px;
   font-size: 21px;
 }
-.swiper-slide .back {
-  font-family: 'Roboto', sans-serif;
-  font-weight: 400;
-  color: #9CA4BE;
+#back-text {
   display: inline-block;
-  font-size: 14px;
   margin-left: 45px;
   margin-top: 8px;
-  text-decoration: none;
+  margin-right: 5px;
+  margin-bottom: 0px;
+  font-size: 14px;
+  color: #898BA8;
 }
 /*Protocol*/
 .protocol-dropdown {
@@ -661,4 +685,56 @@ h3 {
   text-align: center;
   font-size: 14px;
   color: #312E3E;
+}
+/*Notes*/
+.edit {
+  width: 40px;
+  height: 40px;
+  background-repeat: no-repeat;
+  background-image: url("../img/edit.svg");
+}
+.notes-box {
+  border-style: solid;
+  border-color: #9CA4BE;
+  border-width: thin;
+  padding: 10px;
+  margin: 10px;
+}
+.notes-inner {
+  color: #312E3E;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  font-size: 17px;
+}
+.list-block-notes .item-inner:after {
+  display: none;
+}
+.list-block-notes ul:after {
+  display: none;
+}
+.nav-left {
+  margin-left: -30px;
+}
+.profile-img {
+  margin-top: 20px;
+}
+.profile-img .prof-img {
+  width: 100%;
+  height: auto;
+  display: block;
+  margin-left: -40px;
+}
+.profile-info h3 {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 700;
+  color: #312E3E;
+  font-size: 20px;
+  text-align: center;
+}
+.profile-info p {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  color: #898BA8;
+  font-size: 14px;
+  text-align: center;
 }
