@@ -526,6 +526,67 @@ h3 {
   width: 4px;
   background: #d7e4ed;
 }
+.timeline-img img {
+  width: 50px;
+  height: auto;
+}
+#timeline-speaker-example {
+  padding: 10px;
+  text-align: left;
+}
+#timeline-speaker-example .progress-indicator {
+  width: 100%;
+}
+#timeline-speaker-example .progress-indicator li {
+  list-style: none;
+  height: 80px;
+  margin-left: -12px;
+}
+#timeline-speaker-example ::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 28px;
+  height: 100%;
+  width: 1px;
+  background: #9CA4BE;
+  z-index: -1;
+}
+#timeline-speaker-example .bubble {
+  padding: 10px 20px 25px 20px;
+  margin-left: -30px;
+  margin-right: 20px;
+  background-image: url("../img/timeline_circle.svg");
+  background-repeat: no-repeat;
+}
+#timeline-speaker-example .time {
+  font-size: 17px;
+  text-align: left;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  color: #898BA8;
+  margin-left: -20px;
+}
+#timeline-speaker-example .current-time .time {
+  margin-left: -20px;
+  font-size: 17px;
+  color: #898BA8;
+  text-align: left;
+}
+#timeline-speaker-example .stacked-text {
+  color: #312E3E;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  font-size: 17px;
+  padding-left: 20px;
+}
+#timeline-speaker-example .subdued {
+  font-size: 12px;
+  margin-left: 91px;
+  display: inline;
+  color: #898BA8;
+  text-transform: uppercase;
+}
 /*Bradycardia Protocol*/
 .brady-protocol p {
   text-align: center;
@@ -754,4 +815,52 @@ h3 {
   color: #898BA8;
   font-size: 14px;
   text-align: center;
+}
+/*Registation*/
+.reg-prof-form {
+  color: #312E3E;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  font-size: 17px;
+  padding: 10px;
+}
+.reg-prof-form input {
+  border-style: solid;
+  border-width: thin;
+  border-color: #9CA4BE;
+  padding: 10px;
+  width: 90%;
+  margin: 5px 0px 5px 0px;
+  font-size: 17px;
+  color: #898BA8;
+}
+.reg-prof-img {
+  width: 80%;
+  height: auto;
+  display: block;
+  margin-left: 0px;
+}
+#reg-img-edit {
+  margin: 46%;
+}
+.reg-button button {
+  margin-left: 10%;
+  text-align: center;
+  width: 100%;
+  border-radius: 15px;
+  border-style: none;
+  padding: 15px;
+  color: #FFFFFF;
+  font-size: 14px;
+  outline: 0;
+  width: 80%;
+  background: #C73340;
+}
+.reg-button a {
+  color: white;
+  text-align: center;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  text-transform: uppercase;
 }

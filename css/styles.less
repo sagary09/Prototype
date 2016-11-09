@@ -484,6 +484,70 @@ padding: 50px 0px 80px 0px;
   width: 4px;
   background: #d7e4ed;
 }
+.timeline-img{
+  img{
+    width:50px;
+    height:auto;
+  }
+}
+
+#timeline-speaker-example {
+  padding: 10px;
+  text-align: left;
+  .progress-indicator {
+    width: 100%;
+    li {
+      list-style: none;
+      height:80px;
+      margin-left: -12px;
+    }
+   }
+   ::before{
+     content: '';
+     position: absolute;
+     top: 0;
+     left: 28px;
+     height: 100%;
+     width: 1px;
+     background: @stretcher;
+     z-index:-1;
+   }
+  .bubble {
+    padding: 10px 20px 25px 20px;
+    margin-left:-30px;
+    margin-right:20px;
+    background-image: url("../img/timeline_circle.svg");
+    background-repeat: no-repeat;
+  }
+
+  .time {
+    font-size: 17px;
+    text-align: left;
+    .RobotoRegular;
+    color:@bandaid;
+    margin-left: -20px;
+  }
+  .current-time .time {
+    margin-left: -20px;
+    font-size: 17px;
+    color:@bandaid;
+    text-align: left;
+  }
+  .stacked-text {
+    color:@midnight;
+    .RobotoRegular;
+    font-size: 17px;
+    padding-left:20px;
+  }
+  .subdued {
+    font-size: 12px;
+    margin-left: 91px;
+    display: inline;
+    color: @bandaid;
+    text-transform: uppercase;
+  }
+
+}
 /*Bradycardia Protocol*/
 .brady-protocol{
   p{
@@ -685,5 +749,46 @@ padding: 50px 0px 80px 0px;
     color:@bandaid;
     font-size: 14px;
     text-align: center;
+  }
+}
+/*Registation*/
+.reg-prof-form{
+  color:@midnight;
+  .RobotoRegular;
+  font-size: 17px;
+  padding:10px;
+  input{
+    border-style: solid;
+    border-width: thin;
+    border-color: @stretcher;
+    padding: 10px;
+    width:90%;
+    margin:5px 0px 5px 0px;
+    font-size: 17px;
+    color:@bandaid;
+  }
+}
+.reg-prof-img{
+  width:80%;
+  height:auto;
+  display:block;
+  margin-left:0px;
+}
+#reg-img-edit{
+  margin:46%;
+}
+.reg-button{
+  button{
+    margin-left: 10%;
+    .buttonStyle;
+    width:80%;
+    background: @blood;
+  }
+  a{
+    color:white;
+    text-align: center;
+    .RobotoRegular;
+    font-size: 14px;
+    text-transform: uppercase;
   }
 }
