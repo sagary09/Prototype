@@ -54,6 +54,7 @@ h3 {
   outline: 0;
   text-align: left;
   color: #898BA8;
+  font-size: 17px;
   border-style: solid;
   border-width: thin;
   border-color: #898BA8;
@@ -63,7 +64,7 @@ h3 {
 }
 .form button {
   font-family: 'Roboto', sans-serif;
-  font-weight: 400;
+  font-weight: 300;
   text-align: center;
   width: 100%;
   border-radius: 15px;
@@ -76,6 +77,7 @@ h3 {
 }
 .form button a:link {
   color: white;
+  font-size: 17px;
 }
 .form button:active,
 .form button:focus {
@@ -85,10 +87,13 @@ h3 {
   text-align: center;
   color: white;
   margin: auto;
+  font-size: 17px;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
 }
 .cont-bottom button {
   font-family: 'Roboto', sans-serif;
-  font-weight: 400;
+  font-weight: 300;
   text-align: center;
   width: 100%;
   border-radius: 15px;
@@ -99,6 +104,7 @@ h3 {
   width: 60%;
   color: #FFFFFF;
   background: #898BA8;
+  font-size: 17px;
 }
 .index-content-block {
   background-color: #312e3e;
@@ -428,7 +434,7 @@ h3 {
   margin-top: 8px;
   margin-right: 5px;
   margin-bottom: 0px;
-  font-size: 14px;
+  font-size: 16px;
   color: #898BA8;
 }
 #fire-back-text {
@@ -437,7 +443,7 @@ h3 {
   margin-top: 8px;
   margin-right: 5px;
   margin-bottom: 0px;
-  font-size: 14px;
+  font-size: 16px;
   color: #898BA8;
   width: 200px;
 }
@@ -827,12 +833,14 @@ h3 {
 .reg-prof-form input {
   border-style: solid;
   border-width: thin;
-  border-color: #9CA4BE;
+  border-color: rgba(193, 193, 193, 0.6);
   padding: 10px;
   width: 90%;
   margin: 5px 0px 5px 0px;
   font-size: 17px;
   color: #898BA8;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
 }
 .reg-prof-img {
   width: 80%;
@@ -842,9 +850,11 @@ h3 {
 }
 #reg-img-edit {
   margin: 46%;
+  color: #898BA8;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
 }
 .reg-button button {
-  margin-left: 10%;
   text-align: center;
   width: 100%;
   border-radius: 15px;
@@ -855,12 +865,59 @@ h3 {
   outline: 0;
   width: 80%;
   background: #C73340;
+  margin: auto;
+  display: block;
 }
 .reg-button a {
   color: white;
   text-align: center;
   font-family: 'Roboto', sans-serif;
   font-weight: 400;
-  font-size: 14px;
+  font-size: 17px;
   text-transform: uppercase;
+}
+.reg-thumb-cont img {
+  width: 80px;
+  heigh: auto;
+  margin: auto;
+  display: block;
+  margin-top: 40%;
+}
+.reg-thumb-cont p {
+  color: #898BA8;
+  font-size: 17px;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+  text-align: center;
+  padding-top: 20px;
+  width: 70%;
+  margin: auto;
+  display: block;
+  line-height: 1.75;
+}
+.reg-thumb-cont button {
+  margin-top: 50%;
+}
+.reg-mic-cont img {
+  width: 110px;
+  heigh: auto;
+  margin: auto;
+  display: block;
+  margin-top: 12%;
+}
+.reg-mic-cont p {
+  color: #898BA8;
+  font-size: 17px;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+  text-align: center;
+  padding-top: 20px;
+  width: 70%;
+  margin: auto;
+  display: block;
+  line-height: 1.75;
+  margin-top: 20px;
+}
+.reg-mic-cont button {
+  margin-top: 40%;
 }

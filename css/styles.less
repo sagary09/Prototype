@@ -7,6 +7,10 @@
 @midnight:#312E3E;
 
 /*Typography*/
+.RobotoLight (){
+  font-family:'Roboto', sans-serif;
+  font-weight: 300;
+}
 .RobotoRegular (){
   font-family:'Roboto', sans-serif;
   font-weight: 400;
@@ -81,6 +85,7 @@ h3 {
     .buttonStyle;
     text-align: left;
     color: @bandaid;
+    font-size: 17px;
     border-style: solid;
     border-width: thin;
     border-color: @bandaid;
@@ -89,13 +94,14 @@ h3 {
     box-sizing: border-box;
   }
   button {
-    .RobotoRegular;
+    .RobotoLight;
     .buttonStyle;
     outline: 0;
     background: #312e3e;
     color: #FFFFFF;
     a:link{
       color:white;
+      font-size: 17px;
     }
     &:active, &:focus {
       background: @bandaid;
@@ -106,16 +112,18 @@ h3 {
   text-align: center;
   color: white;
   margin: auto;
+  font-size: 17px;
+  .RobotoLight;
   button{
-    .RobotoRegular;
+    .RobotoLight;
     .buttonStyle;
     width: 60%;
     color: #FFFFFF;
     background: @bandaid;
+    font-size: 17px;
   }
 }
 .index-content-block{
-
 background-color: #312e3e;
 margin-top: 20px;
 padding: 50px 0px 80px 0px;
@@ -400,7 +408,7 @@ padding: 50px 0px 80px 0px;
   margin-top: 8px;
   margin-right: 5px;
   margin-bottom: 0px;
-  font-size: 14px;
+  font-size: 16px;
   color:@bandaid;
 }
 #fire-back-text{
@@ -760,12 +768,13 @@ padding: 50px 0px 80px 0px;
   input{
     border-style: solid;
     border-width: thin;
-    border-color: @stretcher;
+    border-color: rgba(193, 193, 193, 0.6);
     padding: 10px;
     width:90%;
     margin:5px 0px 5px 0px;
     font-size: 17px;
     color:@bandaid;
+    .RobotoLight;
   }
 }
 .reg-prof-img{
@@ -774,21 +783,74 @@ padding: 50px 0px 80px 0px;
   display:block;
   margin-left:0px;
 }
+
+
 #reg-img-edit{
   margin:46%;
+  color:@bandaid;
+  .RobotoRegular;
 }
 .reg-button{
   button{
-    margin-left: 10%;
     .buttonStyle;
     width:80%;
     background: @blood;
+    margin:auto;
+    display:block;
   }
   a{
     color:white;
     text-align: center;
     .RobotoRegular;
-    font-size: 14px;
+    font-size: 17px;
     text-transform: uppercase;
   }
 }
+.reg-thumb-cont{
+  img{
+    width:80px;
+    heigh:auto;
+    margin: auto;
+    display:block;
+    margin-top:40%;
+  }
+  p{
+    color:@bandaid;
+    font-size: 17px;
+    .RobotoLight;
+    text-align: center;
+    padding-top: 20px;
+    width: 70%;
+    margin: auto;
+    display: block;
+    line-height: 1.75;
+  }
+  button{
+    margin-top:50%;
+  }
+}
+.reg-mic-cont{
+   img{
+     width:110px;
+     heigh:auto;
+     margin: auto;
+     display:block;
+     margin-top:12%;
+   }
+   p{
+     color:@bandaid;
+     font-size: 17px;
+     .RobotoLight;
+     text-align: center;
+     padding-top: 20px;
+     width: 70%;
+     margin: auto;
+     display: block;
+     line-height: 1.75;
+     margin-top: 20px;
+   }
+   button{
+     margin-top:40%;
+   }
+
+ }
