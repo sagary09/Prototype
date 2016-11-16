@@ -380,6 +380,26 @@ h3 {
   margin-top: 150px;
   background-image: url("../img/Add_event_button.svg");
 }
+.add_event-step1 {
+  display: inline-block;
+  width: 85px;
+  height: 85px;
+  float: right;
+  margin-right: 10px;
+  margin-top: 150px;
+  background-image: url("../img/Add_event_button.svg");
+  margin-top: 343px;
+}
+.add_event-step2 {
+  display: inline-block;
+  width: 85px;
+  height: 85px;
+  float: right;
+  margin-right: 10px;
+  margin-top: 150px;
+  background-image: url("../img/Add_event_button.svg");
+  margin-top: 275px;
+}
 .event-navTitle {
   font-family: 'Roboto', sans-serif;
   font-weight: 700;
@@ -648,11 +668,12 @@ h3 {
   z-index: -1;
 }
 #timeline .bubble {
-  padding: 10px 20px 25px 20px;
+  padding: 5px 20px 25px 20px;
   margin-left: -30px;
   margin-right: 20px;
   background-image: url("../img/timeline_circle.svg");
   background-repeat: no-repeat;
+  display: inline;
 }
 #timeline .time {
   font-size: 17px;
@@ -661,26 +682,47 @@ h3 {
   font-weight: 400;
   color: #898BA8;
   margin-left: -20px;
+  display: inline;
 }
 #timeline .current-time .time {
   margin-left: -20px;
   font-size: 17px;
   color: #898BA8;
   text-align: left;
+  display: inline;
 }
 #timeline .stacked-text {
   color: #312E3E;
   font-family: 'Roboto', sans-serif;
   font-weight: 400;
   font-size: 17px;
-  padding-left: 20px;
-}
-#timeline .subdued {
-  font-size: 12px;
-  margin-left: 91px;
+  padding-left: 50px;
+  text-align: left;
   display: inline;
+}
+#timeline .stacked-text .switch {
+  background-image: url("../img/switch.svg");
+  background-repeat: no-repeat;
+  margin-left: 115px;
+  padding: 13px;
+}
+#timeline .stacked-text #switch {
+  color: #C73340;
+  font-size: 14px;
+  display: inline;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+}
+#timeline .stacked-text .subdued {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  font-size: 12px;
+  margin-left: 25px;
   color: #898BA8;
   text-transform: uppercase;
+  text-align: left;
+  display: inline;
+  margin-top: 0px;
 }
 /*Bradycardia Protocol*/
 .brady-protocol p {

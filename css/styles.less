@@ -357,6 +357,14 @@ padding: 50px 0px 80px 0px;
   margin-top: 150px;
   background-image: url("../img/Add_event_button.svg");
 }
+.add_event-step1{
+  .add_event;
+  margin-top:343px;
+}
+.add_event-step2{
+  .add_event;
+  margin-top:275px;
+}
 .event-navTitle{
   .navTitle;
 }
@@ -554,11 +562,12 @@ padding: 50px 0px 80px 0px;
      z-index:-1;
    }
   .bubble {
-    padding: 10px 20px 25px 20px;
+    padding: 5px 20px 25px 20px;
     margin-left:-30px;
     margin-right:20px;
     background-image: url("../img/timeline_circle.svg");
     background-repeat: no-repeat;
+    display:inline;
   }
 
   .time {
@@ -567,27 +576,46 @@ padding: 50px 0px 80px 0px;
     .RobotoRegular;
     color:@bandaid;
     margin-left: -20px;
+    display:inline;
   }
   .current-time .time {
     margin-left: -20px;
     font-size: 17px;
     color:@bandaid;
     text-align: left;
+    display:inline;
   }
   .stacked-text {
     color:@midnight;
     .RobotoRegular;
     font-size: 17px;
-    padding-left:20px;
-  }
-  .subdued {
-    font-size: 12px;
-    margin-left: 91px;
+    padding-left:50px;
+    text-align: left;
+    display:inline;
+    .switch{
+      background-image: url("../img/switch.svg");
+      background-repeat: no-repeat;
+      margin-left:115px;
+      padding:13px;
+    }
+    #switch{
+    color:@blood;
+    font-size: 14px;
     display: inline;
-    color: @bandaid;
-    text-transform: uppercase;
+    .RobotoRegular;
+    }
+    .subdued {
+      .RobotoRegular;
+      font-size: 12px;
+      margin-left:25px;
+      display: inline;
+      color: @bandaid;
+      text-transform: uppercase;
+      text-align: left;
+      display:inline;
+      margin-top:0px;
+    }
   }
-
 }
 /*Bradycardia Protocol*/
 .brady-protocol{

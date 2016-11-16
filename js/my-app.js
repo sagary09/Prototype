@@ -58,6 +58,26 @@ myApp.onPageInit('empty_screens', function (page) {
 
 });
 
+myApp.onPageInit('event-step1', function (page) {
+    // run createContentPage func after link was clicked
+    var protocol =["Assessment"," Contact" , "CPR", "Defib", "EKG", "EPINEPHrine", "HPI"];
+    var autocompleteDropdownEvent = myApp.autocomplete({
+        input: '#autocomplete-dropdown-event',
+        openIn: 'dropdown',
+        expandInput: true,
+        source: function (autocomplete, query, render) {
+            var results = [];
+            // Find matched items
+            for (var i = 0; i < protocol.length; i++) {
+                if (protocol[i].toLowerCase().indexOf(query.toLowerCase()) >= 0) results.push(protocol[i]);
+            }
+            // Render items by passing array with result items
+            render(results);
+        }
+    });
+
+});
+
 
 // Generate dynamic page
 var dynamicPageIndex = 0;
