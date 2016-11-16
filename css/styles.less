@@ -471,35 +471,16 @@ padding: 50px 0px 80px 0px;
     width:96%;
   }
 }
-#autocomplete-dropdown-all{
-  background-color: @bandaid;
-
+/*Narrative*/
+.sync{
+  .topIcon-size;
+  background-image: url("../img/sync.svg");
+  background-repeat: no-repeat;
 }
-/*Timeline*/
+/*Event Timeline*/
+
 #timeline {
-  position: relative;
-  padding: 2em 0;
-  margin-top: 2em;
-  margin-bottom: 2em;
-}
-#timeline::before {
-  /* this is the vertical line */
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 18px;
-  height: 100%;
-  width: 4px;
-  background: #d7e4ed;
-}
-.timeline-img{
-  img{
-    width:50px;
-    height:auto;
-  }
-}
-
-#timeline-speaker-example {
+  visibility: hidden;
   padding: 10px;
   text-align: left;
   .progress-indicator {

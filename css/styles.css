@@ -512,43 +512,28 @@ h3 {
   margin-bottom: -4px;
   width: 96%;
 }
-#autocomplete-dropdown-all {
-  background-color: #898BA8;
+/*Narrative*/
+.sync {
+  width: 40px;
+  height: 40px;
+  background-image: url("../img/sync.svg");
+  background-repeat: no-repeat;
 }
-/*Timeline*/
+/*Event Timeline*/
 #timeline {
-  position: relative;
-  padding: 2em 0;
-  margin-top: 2em;
-  margin-bottom: 2em;
-}
-#timeline::before {
-  /* this is the vertical line */
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 18px;
-  height: 100%;
-  width: 4px;
-  background: #d7e4ed;
-}
-.timeline-img img {
-  width: 50px;
-  height: auto;
-}
-#timeline-speaker-example {
+  visibility: hidden;
   padding: 10px;
   text-align: left;
 }
-#timeline-speaker-example .progress-indicator {
+#timeline .progress-indicator {
   width: 100%;
 }
-#timeline-speaker-example .progress-indicator li {
+#timeline .progress-indicator li {
   list-style: none;
   height: 80px;
   margin-left: -12px;
 }
-#timeline-speaker-example ::before {
+#timeline ::before {
   content: '';
   position: absolute;
   top: 0;
@@ -558,14 +543,14 @@ h3 {
   background: #9CA4BE;
   z-index: -1;
 }
-#timeline-speaker-example .bubble {
+#timeline .bubble {
   padding: 10px 20px 25px 20px;
   margin-left: -30px;
   margin-right: 20px;
   background-image: url("../img/timeline_circle.svg");
   background-repeat: no-repeat;
 }
-#timeline-speaker-example .time {
+#timeline .time {
   font-size: 17px;
   text-align: left;
   font-family: 'Roboto', sans-serif;
@@ -573,20 +558,20 @@ h3 {
   color: #898BA8;
   margin-left: -20px;
 }
-#timeline-speaker-example .current-time .time {
+#timeline .current-time .time {
   margin-left: -20px;
   font-size: 17px;
   color: #898BA8;
   text-align: left;
 }
-#timeline-speaker-example .stacked-text {
+#timeline .stacked-text {
   color: #312E3E;
   font-family: 'Roboto', sans-serif;
   font-weight: 400;
   font-size: 17px;
   padding-left: 20px;
 }
-#timeline-speaker-example .subdued {
+#timeline .subdued {
   font-size: 12px;
   margin-left: 91px;
   display: inline;
