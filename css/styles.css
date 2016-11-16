@@ -519,6 +519,21 @@ h3 {
   background-image: url("../img/sync.svg");
   background-repeat: no-repeat;
 }
+/*Event Dropdown*/
+.event-block {
+  margin-top: 0px;
+  margin-left: -16px;
+  margin-right: -16px;
+}
+.event-block .item-content {
+  background-color: #312E3E;
+  color: white;
+}
+.event-block .item-input {
+  margin-top: -5px;
+  margin-bottom: -4px;
+  width: 96%;
+}
 /*Event Timeline*/
 #timeline {
   visibility: hidden;
