@@ -625,7 +625,7 @@ h3 {
 }
 /*Event Timeline*/
 #timeline {
-  visibility: hidden;
+  visibility: visible;
   padding: 10px;
   text-align: left;
 }

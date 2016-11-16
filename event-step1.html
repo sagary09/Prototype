@@ -3,7 +3,7 @@
 <!-- Bottom ToolBar-->
 <div class="pages">
   <!-- Page, data-page contains page name-->
-  <div data-page="empty_screens" class="page">
+  <div data-page="event-step1" class="page">
     <!-- Scrollable page content-->
     <div class="page-content">
       <div class="swiper-container swiper-init" data-speed="400" data-space-between="40" data-pagination=".swiper-pagination">
@@ -35,15 +35,18 @@
                 <p>Bradycardia</p>
               </div>
             </div>
-            <div class="content-block" id="empty-events">
-              <div class="content-block-inner">
-                <div class="emptyScreen">
-                  <img src="img/medical_kit.svg" class="ambulance" alt="ambulance" />
-                  <p class="line1">Currently no events added</p>
-                  <p class="line2">Click on the <img src="img/Add_event_button.svg" alt="add" class="addSmall"> icon below to add a new case.</p>
-                </div>
+              <div id="timeline">
+                <ul class="progress-indicator stacked">
+                  <li class="current-time" id="event_1">
+                      <span class="bubble"></span>
+                      <span class="time">1:20pm</span>
+                      <span class="stacked-text">
+                          Medical Command<br />
+                          <span class="subdued">ALBERT EINSTIEN MEDICAL CENTER</span>
+                      </span>
+                  </li>
+                </ul>
               </div>
-            </div>
             <a href="#" data-popup=".popup-add"class="link open-popup">
               <i class="add_event"></i>
             </a>
@@ -94,80 +97,15 @@
             <div class="content-block">
               <div class="content-block-inner">
                 <div class="done-button">
-                  <button class="cases-button" id="events-button"><a href="event-step1.html" class="link close-popup">Done</a></button>
+                  <button class="cases-button" id="events-button"><a href="#" class="link close-popup">Done</a></button>
                 </div>
               </div>
             </div>
           </div>
           <!-- Protocol -->
           <div class="swiper-slide">
-            <div class="navbar">
-              <div class="navbar-inner">
-                <div class="left sliding">
-                  <a href="added-case.html" class="link">
-                    <i class="icon-back">
-                      <span id="back-text">CASES</span>
-                    </i>
-                  </a>
-                </div>
-                <div class="event-navTitle">Protocol
-                  <div class="swiper-pagination"></div>
-                </div>
-                <div class="right sliding">
-                  <a href="#" class="link">
-                  </a>
-                </div>
-              </div>
-            </div>
-            <div class="content-block">
-              <div class="content-block-inner event_Cont_block">
-                <p>Bradycardia</p>
-              </div>
-              <div class="list-block protocol-block">
-                <ul>
-                  <li class="item-content">
-                    <div class="item-input protocol-dropdown">
-                      <input type="text" placeholder="Select Protocol" id="autocomplete-dropdown-all">
-                    </div>
-                  </li>
-                </ul>
-              </div>
-            </div>
-            <div class="content-block">
-              <div class="content-block-inner">
-                <div class="emptyScreen">
-                  <img src="img/protocol.svg" class="ambulance" alt="protocol" />
-                  <p class="line1">Select a Protocol</p>
-                  <p class="line2">The protocol will help generate a narrative based on the selections you choose.</p>
-                </div>
-              </div>
-            </div>
           </div>
           <div class="swiper-slide">
-            <div class="navbar">
-              <div class="navbar-inner">
-                <div class="left sliding">
-                  <a href="added-case.html" class="link">
-                    <i class="icon-back">
-                      <span id="back-text">CASES</span>
-                    </i>
-                  </a>
-                </div>
-                <div class="event-navTitle">Narrative
-                  <div class="swiper-pagination"></div>
-                </div>
-                <div class="right sliding">
-                  <a href="#" class="link">
-                    <i class="sync"></i>
-                  </a>
-                </div>
-              </div>
-            </div>
-            <div class="content-block">
-              <div class="content-block-inner event_Cont_block">
-                <p>Bradycardia</p>
-              </div>
-            </div>
           </div> <!--swiper-slide-->
         </div> <!--swiper-wrapper-->
       </div> <!--swiper-container-->
