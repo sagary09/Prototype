@@ -40,7 +40,7 @@ myApp.onPageInit('empty_screens', function (page) {
 // Callbacks to run specific code for specific pages, for example for About page:
 myApp.onPageInit('empty_screens', function (page) {
     // run createContentPage func after link was clicked
-    var protocol =["test1"," test2" ];
+    var protocol =["Assessment"," Contact" , "CPR", "Defib", "EKG", "EPINEPHrine", "HPI"];
     var autocompleteDropdownEvent = myApp.autocomplete({
         input: '#autocomplete-dropdown-event',
         openIn: 'dropdown',
