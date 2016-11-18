@@ -257,6 +257,9 @@ h3 {
   background-repeat: no-repeat;
   background-image: url("../img/close.svg");
 }
+.popup {
+  background-color: white;
+}
 .popup-overlay {
   width: 0;
   height: 0;
