@@ -127,13 +127,51 @@
                 <ul>
                   <li class="item-content">
                     <div class="item-input protocol-dropdown">
-                      <input type="text" placeholder="Select Protocol" id="autocomplete-dropdown-all">
+                      <input type="text" placeholder="Select Protocol" id="autocomplete-dropdown-all" onchange="javascript:show(value)">
                     </div>
                   </li>
                 </ul>
               </div>
+              <div id="section1" style="display:none">
+              <!-- step1 -->
+                  <div class="check">
+                    <p>Initial Patient Contact- Protocol # 201</p>
+                    <label for="check"></label>
+                  </div>
+                  <div class="arrow">&#8595;</div>
+              <!-- end step1 -->
+
+              <!-- step2 -->
+                  <div class="check">
+                    <p>If Patient has severe hypotension or impending cardiac arrest,<br /><span id="text-uppercase">begin Pacing immediately</span>
+                    </p>
+                    <label for="check"></label>
+                  </div>
+                  <div class="arrow">&#8595;</div>
+              <!-- end step2 -->
+              <!-- step3 -->
+                  <div class="check">
+                    <p>
+                    Maintain Airway/ Ventilate, if needed. <span id="text-bold">Administer Oxygen Monitor, ECG &#38; Pulse Oximetry </span>
+                  <br />  Initiate IV/IO NSS Consider 12-Lead, if available
+                    </p>
+                    <label for="check"></label>
+                  </div>
+                  <div class="arrow">&#8595;</div>
+              <!-- end step3 -->
+                <div class="content-block">
+                  <div class="content-block-inner proto_Cont_block">
+                    <p><span>Signs or Symptoms of poor perfusion?<br /></span>
+                      (acute altered mental status, ongoing chest pain, hypotension, or signs of shock)</p>
+                  </div>
+                </div>
+                <div class="Y-N_buttons">
+                  <a href="#section-2"><button>Yes</button></a>
+                  <a href="#"><button>No&nbsp;</button></a>
+                </div>
+              </div>
             </div>
-            <div class="content-block">
+            <div id="emptyPro"class="content-block">
               <div class="content-block-inner">
                 <div class="emptyScreen">
                   <img src="img/protocol.svg" class="ambulance" alt="protocol" />

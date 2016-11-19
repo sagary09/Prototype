@@ -18,7 +18,7 @@ var mySwiper = myApp.swiper('.swiper-container', {
 // Callbacks to run specific code for specific pages, for example for About page:
 myApp.onPageInit('empty_screens', function (page) {
     // run createContentPage func after link was clicked
-    var protocol =["3001-Airway Obsrtuction"," 3031A-General Cardiac Arrest","4001-Airway Management ", " 4002-Sedation-Assisted Intubation ","  5021A-Bradycardia-Adult"," 5021P-Bradycardia-Pediatric", " 6003-Extremity Trauma"," 6004-Crush Syndrome" ];
+    var protocol =["3001-Airway Obsrtuction"," 3031A-General Cardiac Arrest","4001-Airway Management ", " 4002-Sedation-Assisted Intubation ","5021A-Bradycardia-Adult"," 5021P-Bradycardia-Pediatric", " 6003-Extremity Trauma"," 6004-Crush Syndrome" ];
     var autocompleteDropdownAll = myApp.autocomplete({
         input: '#autocomplete-dropdown-all',
         openIn: 'dropdown',
@@ -33,9 +33,16 @@ myApp.onPageInit('empty_screens', function (page) {
             render(results);
         }
     });
-
 });
-
+function show(value) {
+   if (value == "5021A-Bradycardia-Adult") {
+     document.getElementById('section1').style.display = 'inline';
+     document.getElementById('emptyPro').style.display = 'none';
+   }
+   else{
+   section1.style.display='none';
+   }
+ }
 
 // Callbacks to run specific code for specific pages, for example for About page:
 myApp.onPageInit('empty_screens', function (page) {
@@ -55,7 +62,6 @@ myApp.onPageInit('empty_screens', function (page) {
             render(results);
         }
     });
-
 });
 
 myApp.onPageInit('event-step1', function (page) {
