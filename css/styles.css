@@ -342,6 +342,12 @@ h3 {
   border-top-right-radius: 15px;
   border-top-left-radius: 15px;
 }
+.added_case_button span {
+  color: #898BA8;
+  font-size: 12px;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+}
 .added_case_button::after {
   display: block;
   background-color: #C73340;
