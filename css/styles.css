@@ -194,6 +194,7 @@ h3 {
   width: 60px;
   height: 50px;
   margin-top: -12px;
+  margin-left: 5px;
   background-size: 55px 60px;
   background-repeat: no-repeat;
   background-image: url("../img/siren_red.svg");
@@ -202,6 +203,7 @@ h3 {
   width: 60px;
   height: 50px;
   margin-top: -12px;
+  margin-left: 5px;
   background-size: 55px 60px;
   background-repeat: no-repeat;
   background-image: url("../img/notes_red.svg");
@@ -210,6 +212,7 @@ h3 {
   width: 60px;
   height: 50px;
   margin-top: -12px;
+  margin-left: 5px;
   background-size: 55px 60px;
   background-repeat: no-repeat;
   background-image: url("../img/profile_red.svg");
@@ -218,6 +221,7 @@ h3 {
   width: 60px;
   height: 50px;
   margin-top: -12px;
+  margin-left: 5px;
   background-size: 55px 60px;
   background-repeat: no-repeat;
   background-image: url("../img/siren2.svg");
@@ -226,6 +230,7 @@ h3 {
   width: 60px;
   height: 50px;
   margin-top: -12px;
+  margin-left: 5px;
   background-size: 55px 60px;
   background-repeat: no-repeat;
   background-image: url("../img/notes.svg");
@@ -234,6 +239,7 @@ h3 {
   width: 60px;
   height: 50px;
   margin-top: -12px;
+  margin-left: 5px;
   background-size: 55px 60px;
   background-repeat: no-repeat;
   background-image: url("../img/profile.svg");
