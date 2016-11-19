@@ -568,6 +568,7 @@ h3 {
   margin-top: 0px;
   margin-left: -16px;
   margin-right: -16px;
+  margin-bottom: 0px;
 }
 .protocol-block .item-content {
   background-color: #898BA8;
@@ -800,9 +801,8 @@ h3 {
   font-size: 17px;
 }
 .check {
-  width: 80%;
   position: relative;
-  margin: 20px auto;
+  margin: 10px auto;
   background: white;
   border-style: solid;
   border-width: thin;
@@ -810,7 +810,7 @@ h3 {
   color: #898BA8;
   text-align: left;
   line-height: 2;
-  padding: 5px 0px 5px 10px;
+  padding: 0px 0px 0px 5px;
   box-shadow: 1px 3px 4px rgba(102, 102, 102, 0.75);
 }
 .check button {
@@ -842,8 +842,8 @@ h3 {
   width: 20px;
   height: 20px;
   position: absolute;
-  top: 4px;
-  left: 4px;
+  top: 10px;
+  left: 7px;
   float: left;
   cursor: pointer;
   border-radius: 50px;
@@ -855,24 +855,27 @@ h3 {
 #text-uppercase {
   color: #C73340;
   text-transform: uppercase;
+  font-size: 16px;
+  text-align: left;
+  margin-bottom: -10px;
 }
 #text-bold {
   color: black;
   font-family: 'Roboto', sans-serif;
   font-weight: 700;
+  font-size: 16px;
+  text-align: left;
 }
 .arrow {
   color: #C73340;
-  font-size: 42px;
+  font-size: 40px;
   text-align: center;
   margin-top: -36px;
   margin-bottom: -15px;
 }
 .proto_Cont_block {
   background-color: #C73340;
-  width: 90%;
-  margin: auto;
-  margin-top: 20px;
+  margin-top: 16px;
 }
 .proto_Cont_block p {
   text-align: center;
@@ -885,17 +888,14 @@ h3 {
   font-family: 'Roboto', sans-serif;
   font-weight: 400;
   font-size: 14px;
-}
-#section1 {
-  margin-top: 20px;
+  margin-top: -10px;
 }
 .Y-N_buttons {
   display: inline-flex;
-  padding: 10px;
+  padding: 10px 5px;
 }
 .Y-N_buttons a {
   color: white;
-  margin-left: 10px;
   padding-right: 10px;
   font-family: 'Roboto', sans-serif;
   font-weight: 400;
