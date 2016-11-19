@@ -335,6 +335,7 @@ h3 {
   margin-top: 40px;
   padding-bottom: 10px;
   padding-top: 10px;
+  line-height: 1.25;
   -webkit-border-top-right-radius: 15px;
   -webkit-border-top-left-radius: 15px;
   -moz-border-radius-topright: 15px;
@@ -344,7 +345,7 @@ h3 {
 }
 .added_case_button span {
   color: #898BA8;
-  font-size: 12px;
+  font-size: 14px;
   font-family: 'Roboto', sans-serif;
   font-weight: 400;
   padding-bottom: 5px;
@@ -422,13 +423,41 @@ h3 {
   background-image: url("../img/Add_event_button.svg");
   margin-top: 275px;
 }
-.event-navTitle {
+.event-navTitle1 {
   font-family: 'Roboto', sans-serif;
   font-weight: 700;
   text-align: center;
   font-size: 14px;
   text-transform: uppercase;
   color: #312E3E;
+  margin-left: -33px;
+}
+.event-navTitle1 .swiper-pagination {
+  margin-left: 0px;
+}
+.event-navTitle2 {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 700;
+  text-align: center;
+  font-size: 14px;
+  text-transform: uppercase;
+  color: #312E3E;
+  margin-left: -35px;
+}
+.event-navTitle2 .swiper-pagination {
+  margin-left: 10px;
+}
+.event-navTitle3 {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 700;
+  text-align: center;
+  font-size: 14px;
+  text-transform: uppercase;
+  color: #312E3E;
+  margin-left: 17px;
+}
+.event-navTitle3 .swiper-pagination {
+  margin-left: 11px;
 }
 .event_Cont_block {
   background-color: #312E3E;
@@ -452,6 +481,7 @@ h3 {
 .swiper-pagination {
   position: relative;
   display: flex;
+  margin-left: 7px;
 }
 .swiper-pagination-bullet {
   display: inline-block;
