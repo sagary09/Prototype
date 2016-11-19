@@ -4,52 +4,55 @@
   <div data-page="bradycardia_protocol" class="page">
     <!-- Scrollable page content-->
     <div class="page-content">
-      <section title=".check">
-    <!-- step1 -->
-        <div class="check">
-          <input type="checkbox" value="None" id="check" name="check"  />
-          Initial Patient Contact- Protocol # 201
-          <label for="check"></label>
-        </div>
-        <div class="arrow">&#8595;</div>
-      </section>
-    <!-- end step1 -->
+      <div id="section-1">
+        <section title=".check">
+      <!-- step1 -->
+          <div class="check">
+            <input type="checkbox" value="None" id="check" name="check"  />
+            Initial Patient Contact- Protocol # 201
+            <label for="check"></label>
+          </div>
+          <div class="arrow">&#8595;</div>
+        </section>
+      <!-- end step1 -->
 
-    <!-- step2 -->
-      <section title=".check">
-        <div class="check">
-          <input type="checkbox" value="None" id="check" name="check"  />
-          If Patient has severe hypotension or impending cardiac arrest,<br /><span id="text-uppercase">begin Pacing immediately</span>
-          <label for="check"></label>
+      <!-- step2 -->
+        <section title=".check">
+          <div class="check">
+            <input type="checkbox" value="None" id="check" name="check"  />
+            If Patient has severe hypotension or impending cardiac arrest,<br /><span id="text-uppercase">begin Pacing immediately</span>
+            <label for="check"></label>
+          </div>
+          <div class="arrow">&#8595;</div>
+        </section>
+      <!-- end step2 -->
+      <!-- step3 -->
+        <section title=".check">
+          <div class="check">
+            <input type="checkbox" value="None" id="check" name="check"  />
+            Maintain Airway/ Ventilate, if needed. <span id="text-bold">Administer Oxygen Monitor, ECG &#38; Pulse Oximetry </span>
+          <br />  Initiate IV/IO NSS Consider 12-Lead, if available
+            <label for="check"></label>
+          </div>
+          <div class="arrow">&#8595;</div>
+        </section>
+      <!-- end step3 -->
+        <div class="content-block">
+          <div class="content-block-inner proto_Cont_block">
+            <p><span>Signs or Symptoms of poor perfusion?<br /></span>
+              (acute altered mental status, ongoing chest pain, hypotension, or signs of shock)</p>
+          </div>
         </div>
-        <div class="arrow">&#8595;</div>
-      </section>
-    <!-- end step2 -->
-    <!-- step3 -->
-      <section title=".check">
-        <div class="check">
-          <input type="checkbox" value="None" id="check" name="check"  />
-          Maintain Airway/ Ventilate, if needed. <span id="text-bold">Administer Oxygen Monitor, ECG &#38; Pulse Oximetry </span>
-        <br />  Initiate IV/IO NSS Consider 12-Lead, if available
-          <label for="check"></label>
+        <div class="Y-N_buttons">
+          <a href="#section-2"><button>Yes</button></a>
+          <a href="#"><button>No&nbsp;</button></a>
         </div>
-        <div class="arrow">&#8595;</div>
-      </section>
-    <!-- end step3 -->
-      <div class="content-block">
-        <div class="content-block-inner proto_Cont_block">
-          <p><span>Signs or Symptoms of poor perfusion?<br /></span>
-            (acute altered mental status, ongoing chest pain, hypotension, or signs of shock)</p>
-        </div>
-      </div>
-      <div class="Y-N_buttons">
-        <a href="#section-2"><button>Yes</button></a>
-        <a href="#"><button>No&nbsp;</button></a>
       </div>
 
         <!--part2-->
     <!-- step1 -->
-      <div id="section-2"class="arrow-up">
+    <div id="section-2" class="content-block">
+      <div class="arrow-up">
         <img src="img/up_arrow.svg" alt="arrow"></img>
         <p>Signs/Symptoms of poor perfusion<p>
       </div>
@@ -62,6 +65,7 @@
         </div>
         <p>OR</p>
       </section>
+    </div>
     <!-- end step1 -->
       <section title=".check">
     <!-- step1 -->
