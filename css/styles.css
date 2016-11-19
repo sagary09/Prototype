@@ -848,27 +848,8 @@ h3 {
   border-color: #898BA8;
   margin-top: 3px;
   margin-right: 9px;
-}
-.check label:after {
-  content: '';
-  width: 9px;
-  height: 5px;
-  position: absolute;
-  top: 5px;
-  left: 4px;
-  border: 3px solid #8cc63f;
-  border-top: none;
-  border-right: none;
-  background: transparent;
-  opacity: 0;
-  transform: rotate(-45deg);
-}
-.check input[type=checkbox] {
-  visibility: hidden;
-  line-height: .5;
-}
-.check input[type=checkbox]:checked + label:after {
-  opacity: 1;
+  background-image: url("../img/check.svg");
+  background-repeat: no-repeat;
 }
 #text-uppercase {
   color: #C73340;

@@ -711,27 +711,8 @@ padding: 50px 0px 80px 0px;
     border-color: @bandaid;
     margin-top: 3px;
     margin-right: 9px;
-    &:after {
-      content: '';
-      width: 9px;
-      height: 5px;
-      position: absolute;
-      top: 5px;
-      left: 4px;
-      border: 3px solid #8cc63f;
-      border-top: none;
-      border-right: none;
-      background: transparent;
-      opacity: 0;
-      transform: rotate(-45deg);
-    }
-  }
-  input[type=checkbox] {
-    visibility:hidden;
-    line-height: .5;
-    &:checked + label:after {
-      opacity: 1;
-    }
+    background-image: url("../img/check.svg");
+    background-repeat: no-repeat;
   }
 }
 #text-uppercase{
