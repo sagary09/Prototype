@@ -834,6 +834,10 @@ h3 {
   font-weight: 500;
   font-size: 14px;
 }
+.check p {
+  margin-left: 33px;
+  line-height: 1.5;
+}
 .check label {
   width: 20px;
   height: 20px;
@@ -847,9 +851,6 @@ h3 {
   border-width: thin;
   border-color: #898BA8;
   margin-top: 3px;
-  margin-right: 9px;
-  background-image: url("../img/check.svg");
-  background-repeat: no-repeat;
 }
 #text-uppercase {
   color: #C73340;
