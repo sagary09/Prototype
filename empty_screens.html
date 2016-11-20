@@ -133,6 +133,7 @@
                 </ul>
               </div>
               <div id="bradyForm" style="display:none">
+                <div id="section1">
               <!-- step1 -->
                   <div class="check" id="check-deselect" onclick="javascript:showDiv();">
                     <p>Initial Patient Contact- Protocol # 201</p>
@@ -184,13 +185,14 @@
                   </div>
                 </div>
                 <div class="Y-N_buttons">
-                  <a href="#section2"><button>Yes</button></a>
+                  <a href="#" onclick="click1();"><button>Yes</button></a>
                   <a href="#"><button>No&nbsp;</button></a>
                 </div>
+              </div>
               <!--part2-->
           <!-- step1 -->
-          <div id="section2">
-            <div class="arrow-up">
+          <div id="section2" onclick="section2();">
+            <div class="arrow-up" >
               <img src="img/up_arrow.svg" alt="arrow"></img>
               <p>Signs/Symptoms of poor perfusion<p>
             </div>
@@ -217,11 +219,11 @@
               </div>
             </div>
             <div class="Y-N_buttons">
-              <a href="#"><button>Yes</button></a>
+              <a href="#" onclick="click2();"><button>Yes</button></a>
               <a href="#"><button>No</button></a>
             </div>
           </div> <!--section2-->
-          <div id="section3">
+          <div id="section3" onclick="section3();">
             <div class="arrow-up">
               <img src="img/up_arrow.svg" alt="arrow"></img>
               <p>Pacing not effective OR SBP < 100 mm/Hg<p>
@@ -248,7 +250,7 @@
                   </p>
                     <label for="check"></label>
                 </div>
-                <a href="#"><button>Complete Narrative</button></a>
+                <a href="#" id="complt-nar"><button>Complete Narrative</button></a>
               </div>
         </div><!--bradyForm-->
       </div>

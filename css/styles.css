@@ -811,7 +811,7 @@ h3 {
   text-align: left;
   line-height: 2;
   padding: 0px 0px 0px 5px;
-  box-shadow: 1px 3px 4px rgba(102, 102, 102, 0.75);
+  box-shadow: 1px 2px 3px rgba(101, 101, 101, 0.25);
 }
 .check button {
   text-align: center;
@@ -881,7 +881,7 @@ h3 {
   text-transform: uppercase;
   font-family: 'Roboto', sans-serif;
   font-weight: 700;
-  font-size: 16px;
+  font-size: 15px;
   text-align: left;
   margin-bottom: -10px;
 }
@@ -889,7 +889,7 @@ h3 {
   color: black;
   font-family: 'Roboto', sans-serif;
   font-weight: 700;
-  font-size: 16px;
+  font-size: 15px;
   text-align: left;
 }
 #or {
@@ -911,6 +911,7 @@ h3 {
 .proto_Cont_block {
   background-color: #C73340;
   margin-top: 10px;
+  padding-bottom: 5px;
 }
 .proto_Cont_block p {
   text-align: center;
@@ -927,7 +928,7 @@ h3 {
 }
 .Y-N_buttons {
   display: inline-flex;
-  padding: 8px 5px;
+  padding: 13px 5px;
   margin-bottom: 20px;
 }
 .Y-N_buttons a {
@@ -951,7 +952,7 @@ h3 {
   padding: 16px 61px;
   color: white;
   margin-bottom: 40px;
-  box-shadow: 1px 3px 4px rgba(102, 102, 102, 0.75);
+  box-shadow: 1px 2px 3px rgba(101, 101, 101, 0.25);
 }
 .arrow-up {
   text-align: center;
@@ -966,6 +967,58 @@ h3 {
   text-align: center;
   font-size: 14px;
   color: #312E3E;
+}
+#section2 {
+  height: 667px;
+}
+#section2 .Y-N_buttons {
+  padding-top: 30px;
+}
+#section2 .proto_Cont_block {
+  margin-top: 30px;
+  padding: 15px;
+}
+#section2 .arrow-up {
+  margin-top: -10px;
+}
+#section2 .arrow-up p {
+  margin-top: -10px;
+  margin-bottom: 55px;
+  font-size: 17px;
+}
+#section3 {
+  height: 667px;
+}
+#section3 .check {
+  padding-top: 20px;
+}
+#section3 .proto_Cont_block {
+  margin-top: 30px;
+  padding: 15px;
+}
+#section3 .arrow-up {
+  margin-top: -15px;
+}
+#section3 .arrow-up p {
+  margin-top: -10px;
+  margin-bottom: 40px;
+  font-size: 17px;
+}
+#complt-nar button {
+  text-align: center;
+  width: 100%;
+  border-radius: 15px;
+  border-style: none;
+  padding: 15px;
+  color: #FFFFFF;
+  outline: 0;
+  background-color: #898BA8;
+  margin-bottom: 20px;
+  margin-left: 10px;
+  margin-top: 10px;
+  width: 90%;
+  font-size: 17px;
+  padding: 18px;
 }
 /*Notes*/
 .edit {

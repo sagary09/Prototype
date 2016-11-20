@@ -61,6 +61,23 @@ function showDiv3(){
   div=document.getElementById('check-deselect3');
   div.style.display = 'none';
 }
+function click1(){
+  document.all.section2.scrollIntoView(true);
+}
+function section2(){
+  window.scrollTo(0,0);
+}
+function click2(){
+  document.all.section3.scrollIntoView(true);
+}
+function section3(){
+  window.scrollTo(0,0);
+}
+
+
+
+
+
 
 // Callbacks to run specific code for specific pages, for example for About page:
 myApp.onPageInit('empty_screens', function (page) {
