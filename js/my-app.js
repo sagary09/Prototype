@@ -36,11 +36,11 @@ myApp.onPageInit('empty_screens', function (page) {
 });
 function show(value) {
    if (value == "5021A-Bradycardia-Adult") {
-     document.getElementById('section1').style.display = 'inline';
+     document.getElementById('bradyForm').style.display = 'inline';
      document.getElementById('emptyPro').style.display = 'none';
    }
    else{
-   section1.style.display='none';
+   bradyForm.style.display='none';
    }
 }
 function showDiv(){
@@ -55,7 +55,12 @@ function showDiv2(){
   div=document.getElementById('check-deselect2');
   div.style.display = 'none';
 }
-
+function showDiv3(){
+  div= document.getElementById('check3');
+  div.style.display = 'block';
+  div=document.getElementById('check-deselect3');
+  div.style.display = 'none';
+}
 
 // Callbacks to run specific code for specific pages, for example for About page:
 myApp.onPageInit('empty_screens', function (page) {

@@ -132,7 +132,7 @@
                   </li>
                 </ul>
               </div>
-              <div id="section1" style="display:none">
+              <div id="bradyForm" style="display:none">
               <!-- step1 -->
                   <div class="check" id="check-deselect" onclick="javascript:showDiv();">
                     <p>Initial Patient Contact- Protocol # 201</p>
@@ -161,12 +161,19 @@
                   <div class="arrow">&#8595;</div>
               <!-- end step2 -->
               <!-- step3 -->
-                  <div class="check">
+                  <div class="check" id="check-deselect3" onclick="javascript:showDiv3();">
                     <p>
                     Maintain Airway/ Ventilate, if needed. <span id="text-bold">Administer Oxygen Monitor, ECG &#38; Pulse Oximetry </span>
                   Initiate IV/IO NSS Consider 12-Lead, if available
                     </p>
                     <label for="check"></label>
+                  </div>
+                  <div class="check check-select" id="check3" style="display:none">
+                    <p>
+                    Maintain Airway/ Ventilate, if needed. <span id="text-bold">Administer Oxygen Monitor, ECG &#38; Pulse Oximetry </span>
+                  Initiate IV/IO NSS Consider 12-Lead, if available
+                    </p>
+                    <img  src="img/check.svg" class="checkmark"></img>
                   </div>
                   <div class="arrow">&#8595;</div>
               <!-- end step3 -->
@@ -177,11 +184,74 @@
                   </div>
                 </div>
                 <div class="Y-N_buttons">
-                  <a href="#section-2"><button>Yes</button></a>
+                  <a href="#section2"><button>Yes</button></a>
                   <a href="#"><button>No&nbsp;</button></a>
                 </div>
+              <!--part2-->
+          <!-- step1 -->
+          <div id="section2">
+            <div class="arrow-up">
+              <img src="img/up_arrow.svg" alt="arrow"></img>
+              <p>Signs/Symptoms of poor perfusion<p>
+            </div>
+              <div class="check" id="check-deselect4" onclick="javascript:showDiv4();">
+                <p><span id="text-bold" >Atropine 0.5 mg IV/IO</span>
+                while preparing Pacer (May repeat if needed to maximum of 3 mg)</p>
+                  <label for="check"></label>
+              </div>
+              <p id="or">OR</p>
+          <!-- end step1 -->
+          <!-- step1 -->
+              <div class="check">
+                <p> <span id="text-bold" >Begin Pacing, Sedation </span>
+                Initial dose if needed
+                </p>
+                  <label for="check"></label>
+                  <a href="#"><button>View Sedation Options</button></a>
+              </div>
+              <div class="arrow">&#8595;</div>
+          <!-- end step1 -->
+            <div class="content-block">
+              <div class="content-block-inner proto_Cont_block">
+                <p>Pacing effective AND SBP > 100 mm/Hg</p>
               </div>
             </div>
+            <div class="Y-N_buttons">
+              <a href="#"><button>Yes</button></a>
+              <a href="#"><button>No</button></a>
+            </div>
+          </div> <!--section2-->
+          <div id="section3">
+            <div class="arrow-up">
+              <img src="img/up_arrow.svg" alt="arrow"></img>
+              <p>Pacing not effective OR SBP < 100 mm/Hg<p>
+            </div>
+              <div class="check">
+                <p>Contact Medical Command</p>
+                  <label for="check"></label>
+              </div>
+              <div class="arrow">&#8595;</div>
+            <!-- end step1 -->
+                <div class="check">
+                  <p>
+                    <span id="text-bold" >EPINEPHrine9</span>
+                    Push dose (diluted) 10-20 mcg boluses or infusion
+                  </p>
+                    <label for="check"></label>
+                </div>
+                <p id="or">OR</p>
+
+                <div class="check">
+                  <p>
+                    <span id="text-bold" >DOPAmine</span>
+                    Infusion 10, repeat additional sedation
+                  </p>
+                    <label for="check"></label>
+                </div>
+                <a href="#"><button>Complete Narrative</button></a>
+              </div>
+        </div><!--bradyForm-->
+      </div>
             <div id="emptyPro"class="content-block">
               <div class="content-block-inner">
                 <div class="emptyScreen">

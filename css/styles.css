@@ -826,6 +826,7 @@ h3 {
   margin-left: 10px;
   margin-top: 10px;
   width: 90%;
+  font-size: 17px;
 }
 .check button a {
   color: white;
@@ -869,6 +870,12 @@ h3 {
 #check2 span {
   color: white;
 }
+#check3 .checkmark {
+  margin-top: -119px;
+}
+#check3 span {
+  color: white;
+}
 #text-uppercase {
   color: #C73340;
   text-transform: uppercase;
@@ -885,6 +892,15 @@ h3 {
   font-size: 16px;
   text-align: left;
 }
+#or {
+  text-align: center;
+  position: relative;
+  margin: auto;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 700;
+  font-size: 17px;
+  color: #312E3E;
+}
 .arrow {
   color: #C73340;
   font-size: 40px;
@@ -894,14 +910,14 @@ h3 {
 }
 .proto_Cont_block {
   background-color: #C73340;
-  margin-top: 16px;
+  margin-top: 10px;
 }
 .proto_Cont_block p {
   text-align: center;
   color: white;
   font-family: 'Roboto', sans-serif;
   font-weight: 400;
-  font-size: 12px;
+  font-size: 14px;
 }
 .proto_Cont_block span {
   font-family: 'Roboto', sans-serif;
@@ -911,7 +927,8 @@ h3 {
 }
 .Y-N_buttons {
   display: inline-flex;
-  padding: 10px 5px;
+  padding: 8px 5px;
+  margin-bottom: 20px;
 }
 .Y-N_buttons a {
   color: white;
