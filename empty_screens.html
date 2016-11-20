@@ -134,18 +134,29 @@
               </div>
               <div id="section1" style="display:none">
               <!-- step1 -->
-                  <div class="check">
+                  <div class="check" id="check-deselect" onclick="javascript:showDiv();">
                     <p>Initial Patient Contact- Protocol # 201</p>
                     <label for="check"></label>
                   </div>
+                  <!--check select 1 -->
+                  <div class="check check-select" id="check1" style="display:none">
+                    <p>Initial Patient Contact- Protocol # 201</p>
+                    <img  src="img/check.svg" class="checkmark"></img>
+                  </div>
                   <div class="arrow">&#8595;</div>
+
               <!-- end step1 -->
 
               <!-- step2 -->
-                  <div class="check">
+                  <div class="check" id="check-deselect2" onclick="javascript:showDiv2();">
                     <p>If Patient has severe hypotension or impending cardiac arrest,<br /><span id="text-uppercase">begin Pacing immediately</span>
                     </p>
                     <label for="check"></label>
+                  </div>
+                  <div class="check check-select" id="check2" style="display:none">
+                    <p>If Patient has severe hypotension or impending cardiac arrest,<br /><span id="text-uppercase">begin Pacing immediately</span>
+                    </p>
+                    <img  src="img/check.svg" class="checkmark"></img>
                   </div>
                   <div class="arrow">&#8595;</div>
               <!-- end step2 -->

@@ -852,9 +852,28 @@ h3 {
   border-color: #898BA8;
   margin-top: 3px;
 }
+.check-select {
+  background-color: #312E3E;
+  color: white;
+}
+.checkmark {
+  width: 40px;
+  height: auto;
+  margin-top: -43px;
+  position: absolute;
+  margin-left: -4px;
+}
+#check2 .checkmark {
+  margin-top: -82px;
+}
+#check2 span {
+  color: white;
+}
 #text-uppercase {
   color: #C73340;
   text-transform: uppercase;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 700;
   font-size: 16px;
   text-align: left;
   margin-bottom: -10px;
@@ -870,8 +889,8 @@ h3 {
   color: #C73340;
   font-size: 40px;
   text-align: center;
-  margin-top: -36px;
-  margin-bottom: -15px;
+  margin-top: -39px;
+  margin-bottom: -11px;
 }
 .proto_Cont_block {
   background-color: #C73340;

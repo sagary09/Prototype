@@ -42,7 +42,20 @@ function show(value) {
    else{
    section1.style.display='none';
    }
+}
+function showDiv(){
+    div= document.getElementById('check1');
+    div.style.display = 'block';
+    div=document.getElementById('check-deselect');
+    div.style.display = 'none';
  }
+function showDiv2(){
+  div= document.getElementById('check2');
+  div.style.display = 'block';
+  div=document.getElementById('check-deselect2');
+  div.style.display = 'none';
+}
+
 
 // Callbacks to run specific code for specific pages, for example for About page:
 myApp.onPageInit('empty_screens', function (page) {
