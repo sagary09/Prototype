@@ -37,6 +37,7 @@ myApp.onPageInit('empty_screens', function (page) {
 function show(value) {
    if (value == "5021A-Bradycardia-Adult") {
      document.getElementById('bradyForm').style.display = 'inline';
+     document.getElementById('narrTitle').style.display = 'block'
      document.getElementById('emptyPro').style.display = 'none';
    }
    else{
@@ -62,11 +63,15 @@ function showDiv2(){
 function showDiv3(){
   div= document.getElementById('check3');
   div.style.display = 'block';
+  div= document.getElementById('txt3');
+  div.style.display = 'block';
   div=document.getElementById('check-deselect3');
   div.style.display = 'none';
 }
 function showDiv4(){
   div= document.getElementById('check4');
+  div.style.display = 'block';
+  div= document.getElementById('txt4');
   div.style.display = 'block';
   div=document.getElementById('check-deselect4');
   div.style.display = 'none';
