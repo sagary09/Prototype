@@ -876,6 +876,30 @@ h3 {
 #check3 span {
   color: white;
 }
+#check4 .checkmark {
+  margin-top: -85px;
+}
+#check4 span {
+  color: white;
+}
+#check5 .checkmark {
+  margin-top: -64px;
+}
+#check5 span {
+  color: white;
+}
+#check7 .checkmark {
+  margin-top: -85px;
+}
+#check7 span {
+  color: white;
+}
+#check8 .checkmark {
+  margin-top: -65px;
+}
+#check8 span {
+  color: white;
+}
 #text-uppercase {
   color: #C73340;
   text-transform: uppercase;
@@ -968,11 +992,8 @@ h3 {
   font-size: 14px;
   color: #312E3E;
 }
-#section2 {
-  height: 667px;
-}
 #section2 .Y-N_buttons {
-  padding-top: 30px;
+  padding-top: 35px;
 }
 #section2 .proto_Cont_block {
   margin-top: 30px;
@@ -988,9 +1009,6 @@ h3 {
 }
 #section3 {
   height: 667px;
-}
-#section3 .check {
-  padding-top: 20px;
 }
 #section3 .proto_Cont_block {
   margin-top: 30px;
@@ -1019,6 +1037,9 @@ h3 {
   width: 90%;
   font-size: 17px;
   padding: 18px;
+}
+#bradyForm {
+  background-color: white;
 }
 /*Notes*/
 .edit {

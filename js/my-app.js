@@ -61,6 +61,36 @@ function showDiv3(){
   div=document.getElementById('check-deselect3');
   div.style.display = 'none';
 }
+function showDiv4(){
+  div= document.getElementById('check4');
+  div.style.display = 'block';
+  div=document.getElementById('check-deselect4');
+  div.style.display = 'none';
+}
+function showDiv5(){
+  div= document.getElementById('check5');
+  div.style.display = 'block';
+  div=document.getElementById('check-deselect5');
+  div.style.display = 'none';
+}
+function showDiv6(){
+  div= document.getElementById('check6');
+  div.style.display = 'block';
+  div=document.getElementById('check-deselect6');
+  div.style.display = 'none';
+}
+function showDiv7(){
+  div= document.getElementById('check7');
+  div.style.display = 'block';
+  div=document.getElementById('check-deselect7');
+  div.style.display = 'none';
+}
+function showDiv8(){
+  div= document.getElementById('check8');
+  div.style.display = 'block';
+  div=document.getElementById('check-deselect8');
+  div.style.display = 'none';
+}
 function click1(){
   document.all.section2.scrollIntoView(true);
 }
