@@ -3,21 +3,21 @@ var myApp = new Framework7();
 
 // Export selectors engine
 var $$ = Dom7;
+
 // Add view
 var mainView = myApp.addView('.view-main', {
     // Because we use fixed-through navbar we can enable dynamic navbar
-    dynamicNavbar: true
-});
-$$('.prompt-title-ok').on('click', function () {
-    myApp.prompt('What is your name?', 'Custom Title', function (value) {
-        myApp.alert('Your name is "' + value + '". You clicked Ok button');
-    });
+    dynamicNavbar: false
 });
 
 var mySwiper = myApp.swiper('.swiper-container', {
     pagination:'.swiper-pagination'
   });
-
+$$('.prompt-title-ok').on('click', function () {
+    myApp.prompt('What is your name?', 'Custom Title', function (value) {
+        myApp.alert('Your name is "' + value + '". You clicked Ok button');
+    });
+});
 // Callbacks to run specific code for specific pages, for example for About page:
 myApp.onPageInit('all_events', function (page) {
     // run createContentPage func after link was clicked
@@ -117,14 +117,7 @@ function section3(){
   window.scrollTo(0,0);
 }
 
-function notePrompt() {
-    var folder = prompt('New Folder',"Please enter the name of your folder");
 
-    if (folder != null) {
-        document.getElementById("fireDept");
-        div.style.display = 'block';
-    }
-}
 
 
 
