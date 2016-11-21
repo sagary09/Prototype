@@ -13,7 +13,11 @@ var mainView = myApp.addView('.view-main', {
     // Because we use fixed-through navbar we can enable dynamic navbar
     dynamicNavbar: true
 });
-
+$$('.prompt-title-ok').on('click', function () {
+    myApp.prompt('What is your name?', 'Custom Title', function (value) {
+        myApp.alert('Your name is "' + value + '". You clicked Ok button');
+    });
+});
 
 var mySwiper = myApp.swiper('.swiper-container', {
     pagination:'.swiper-pagination'
