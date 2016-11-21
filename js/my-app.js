@@ -44,6 +44,14 @@ function show(value) {
    bradyForm.style.display='none';
    }
 }
+function show2(value) {
+   if (value == "Vital Signs") {
+     document.getElementById('vitals').style.display = 'inline';
+   }
+   else{
+   vitals.style.display='none';
+   }
+}
 function showDiv(){
     div= document.getElementById('check1');
     div.style.display = 'block';
@@ -142,7 +150,7 @@ myApp.onPageInit('event-step1', function (page) {
     // run createContentPage func after link was clicked
     var protocol =["12 Lead", "Contact/Consent" , "CPR", "Defib", "EKG", "EPINEPHrine","Event" ,"HPI", "Initial Assessment", "Intubate","IO","IV","Narcan","Oxygen" ,"Reeves","Stair Chair","Stretcher","Sugar","Transport","Vital Signs"];
     var autocompleteDropdownEvent = myApp.autocomplete({
-        input: '#autocomplete-dropdown-event',
+        input: '#autocomplete-dropdown-event1',
         openIn: 'dropdown',
         expandInput: true,
         source: function (autocomplete, query, render) {
@@ -155,13 +163,13 @@ myApp.onPageInit('event-step1', function (page) {
             render(results);
         }
     });
-
 });
+
 myApp.onPageInit('event-step2', function (page) {
     // run createContentPage func after link was clicked
     var protocol =["12 Lead", "Contact/Consent" , "CPR", "Defib", "EKG", "EPINEPHrine","Event" ,"HPI", "Initial Assessment", "Intubate","IO","IV","Narcan","Oxygen" ,"Reeves","Stair Chair","Stretcher","Sugar","Transport","Vital Signs"];
     var autocompleteDropdownEvent = myApp.autocomplete({
-        input: '#autocomplete-dropdown-event',
+        input: '#autocomplete-dropdown-event2',
         openIn: 'dropdown',
         expandInput: true,
         source: function (autocomplete, query, render) {
@@ -174,13 +182,13 @@ myApp.onPageInit('event-step2', function (page) {
             render(results);
         }
     });
-
 });
+
 myApp.onPageInit('event-step3', function (page) {
     // run createContentPage func after link was clicked
     var protocol =["12 Lead", "Contact/Consent" , "CPR", "Defib", "EKG", "EPINEPHrine","Event" ,"HPI", "Initial Assessment", "Intubate","IO","IV","Narcan","Oxygen" ,"Reeves","Stair Chair","Stretcher","Sugar","Transport","Vital Signs"];
     var autocompleteDropdownEvent = myApp.autocomplete({
-        input: '#autocomplete-dropdown-event',
+        input: '#autocomplete-dropdown-event3',
         openIn: 'dropdown',
         expandInput: true,
         source: function (autocomplete, query, render) {
@@ -193,27 +201,8 @@ myApp.onPageInit('event-step3', function (page) {
             render(results);
         }
     });
-
 });
-myApp.onPageInit('event-step4', function (page) {
-    // run createContentPage func after link was clicked
-    var protocol =["12 Lead", "Contact/Consent" , "CPR", "Defib", "EKG", "EPINEPHrine","Event" ,"HPI", "Initial Assessment", "Intubate","IO","IV","Narcan","Oxygen" ,"Reeves","Stair Chair","Stretcher","Sugar","Transport","Vital Signs"];
-    var autocompleteDropdownEvent = myApp.autocomplete({
-        input: '#autocomplete-dropdown-event',
-        openIn: 'dropdown',
-        expandInput: true,
-        source: function (autocomplete, query, render) {
-            var results = [];
-            // Find matched items
-            for (var i = 0; i < protocol.length; i++) {
-                if (protocol[i].toLowerCase().indexOf(query.toLowerCase()) >= 0) results.push(protocol[i]);
-            }
-            // Render items by passing array with result items
-            render(results);
-        }
-    });
 
-});
 
 
 // Generate dynamic page
