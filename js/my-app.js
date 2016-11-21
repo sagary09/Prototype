@@ -4,7 +4,7 @@ var myApp = new Framework7();
 // Export selectors engine
 var $$ = Dom7;
 $$('.prompt-title-ok').on('click', function () {
-    myApp.prompt('Enter a name for this folder', 'New Folder', function (value) {
+    myApp.prompt('What is your name?', 'Custom Title', function (value) {
         myApp.alert('Your name is "' + value + '". You clicked Ok button');
     });
 });
