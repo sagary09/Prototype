@@ -389,34 +389,13 @@ h3 {
   margin-top: 8px;
   text-decoration: none;
 }
-.add_event {
-  display: inline-block;
+#actionButton {
+  position: absolute;
   width: 85px;
   height: 85px;
   float: right;
-  margin-right: 10px;
-  margin-top: 150px;
-  background-image: url("../img/Add_event_button.svg");
-}
-.add_event-step1 {
-  display: inline-block;
-  width: 85px;
-  height: 85px;
-  float: right;
-  margin-right: 10px;
-  margin-top: 150px;
-  background-image: url("../img/Add_event_button.svg");
-  margin-top: 343px;
-}
-.add_event-step2 {
-  display: inline-block;
-  width: 85px;
-  height: 85px;
-  float: right;
-  margin-right: 10px;
-  margin-top: 150px;
-  background-image: url("../img/Add_event_button.svg");
-  margin-top: 275px;
+  right: 12px;
+  bottom: 35px;
 }
 .event-navTitle1 {
   font-family: 'Roboto', sans-serif;
@@ -793,29 +772,29 @@ h3 {
   text-align: left;
   display: inline;
 }
-#timeline .stacked-text .switch {
-  background-image: url("../img/switch.svg");
-  background-repeat: no-repeat;
-  margin-left: 115px;
-  padding: 13px;
-}
 #timeline .stacked-text #switch {
   color: #C73340;
   font-size: 14px;
   display: inline;
   font-family: 'Roboto', sans-serif;
   font-weight: 400;
+  margin-left: -1px;
 }
 #timeline .stacked-text .subdued {
   font-family: 'Roboto', sans-serif;
   font-weight: 400;
   font-size: 12px;
-  margin-left: 25px;
   color: #898BA8;
   text-transform: uppercase;
   text-align: left;
-  display: inline;
-  margin-top: 0px;
+  margin-top: -23px;
+  margin-left: 41%;
+}
+#blood {
+  width: 18px;
+  height: auto;
+  margin-left: 35%;
+  margin-top: 5px;
 }
 /*Bradycardia Protocol*/
 .brady-protocol p {

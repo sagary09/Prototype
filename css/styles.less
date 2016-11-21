@@ -360,22 +360,13 @@ padding: 50px 0px 80px 0px;
     text-decoration: none;
   }
 }
-.add_event{
-  display: inline-block;
+#actionButton{
+  position:absolute;
   width: 85px;
   height: 85px;
   float: right;
-  margin-right: 10px;
-  margin-top: 150px;
-  background-image: url("../img/Add_event_button.svg");
-}
-.add_event-step1{
-  .add_event;
-  margin-top:343px;
-}
-.add_event-step2{
-  .add_event;
-  margin-top:275px;
+  right: 12px;
+  bottom:35px;
 }
 .event-navTitle1{
   .navTitle;
@@ -667,30 +658,29 @@ padding: 50px 0px 80px 0px;
     padding-left:50px;
     text-align: left;
     display:inline;
-    .switch{
-      background-image: url("../img/switch.svg");
-      background-repeat: no-repeat;
-      margin-left:115px;
-      padding:13px;
-    }
     #switch{
     color:@blood;
     font-size: 14px;
     display: inline;
     .RobotoRegular;
+    margin-left: -1px;
     }
     .subdued {
       .RobotoRegular;
       font-size: 12px;
-      margin-left:25px;
-      display: inline;
       color: @bandaid;
       text-transform: uppercase;
       text-align: left;
-      display:inline;
-      margin-top:0px;
+      margin-top: -23px;
+      margin-left: 41%;
     }
   }
+}
+#blood{
+  width:18px;
+  height:auto;
+  margin-left: 35%;
+  margin-top: 5px;
 }
 /*Bradycardia Protocol*/
 .brady-protocol{
@@ -714,6 +704,7 @@ padding: 50px 0px 80px 0px;
     }
   }
 }
+
 .check {
   position: relative;
   margin: 10px auto;

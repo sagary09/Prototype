@@ -100,11 +100,28 @@ function showDiv8(){
   div=document.getElementById('check-deselect8');
   div.style.display = 'none';
 }
+function click1(){
+  document.all.section2.scrollIntoView(true);
+}
+function section2(){
+  window.scrollTo(0,0);
+}
+function click2(){
+  document.all.section3.scrollIntoView(true);
+}
+function section3(){
+  window.scrollTo(0,0);
+}
+
+
+
+
+
 
 // Callbacks to run specific code for specific pages, for example for About page:
 myApp.onPageInit('empty_screens', function (page) {
     // run createContentPage func after link was clicked
-    var protocol =["Assessment"," Contact" , "CPR", "Defib", "EKG", "EPINEPHrine", "HPI"];
+    var protocol =["12 Lead", "Contact/Consent" , "CPR", "Defib", "EKG", "EPINEPHrine","Event", "HPI", "Initial Assessment", "Intubate","IO","IV","Narcan","Oxygen", "Reeves","Stair Chair","Stretcher","Sugar","Transport","Vital Signs"];
     var autocompleteDropdownEvent = myApp.autocomplete({
         input: '#autocomplete-dropdown-event',
         openIn: 'dropdown',
@@ -123,7 +140,64 @@ myApp.onPageInit('empty_screens', function (page) {
 
 myApp.onPageInit('event-step1', function (page) {
     // run createContentPage func after link was clicked
-    var protocol =["Assessment"," Contact" , "CPR", "Defib", "EKG", "EPINEPHrine", "HPI"];
+    var protocol =["12 Lead", "Contact/Consent" , "CPR", "Defib", "EKG", "EPINEPHrine","Event" ,"HPI", "Initial Assessment", "Intubate","IO","IV","Narcan","Oxygen" ,"Reeves","Stair Chair","Stretcher","Sugar","Transport","Vital Signs"];
+    var autocompleteDropdownEvent = myApp.autocomplete({
+        input: '#autocomplete-dropdown-event',
+        openIn: 'dropdown',
+        expandInput: true,
+        source: function (autocomplete, query, render) {
+            var results = [];
+            // Find matched items
+            for (var i = 0; i < protocol.length; i++) {
+                if (protocol[i].toLowerCase().indexOf(query.toLowerCase()) >= 0) results.push(protocol[i]);
+            }
+            // Render items by passing array with result items
+            render(results);
+        }
+    });
+
+});
+myApp.onPageInit('event-step2', function (page) {
+    // run createContentPage func after link was clicked
+    var protocol =["12 Lead", "Contact/Consent" , "CPR", "Defib", "EKG", "EPINEPHrine","Event" ,"HPI", "Initial Assessment", "Intubate","IO","IV","Narcan","Oxygen" ,"Reeves","Stair Chair","Stretcher","Sugar","Transport","Vital Signs"];
+    var autocompleteDropdownEvent = myApp.autocomplete({
+        input: '#autocomplete-dropdown-event',
+        openIn: 'dropdown',
+        expandInput: true,
+        source: function (autocomplete, query, render) {
+            var results = [];
+            // Find matched items
+            for (var i = 0; i < protocol.length; i++) {
+                if (protocol[i].toLowerCase().indexOf(query.toLowerCase()) >= 0) results.push(protocol[i]);
+            }
+            // Render items by passing array with result items
+            render(results);
+        }
+    });
+
+});
+myApp.onPageInit('event-step3', function (page) {
+    // run createContentPage func after link was clicked
+    var protocol =["12 Lead", "Contact/Consent" , "CPR", "Defib", "EKG", "EPINEPHrine","Event" ,"HPI", "Initial Assessment", "Intubate","IO","IV","Narcan","Oxygen" ,"Reeves","Stair Chair","Stretcher","Sugar","Transport","Vital Signs"];
+    var autocompleteDropdownEvent = myApp.autocomplete({
+        input: '#autocomplete-dropdown-event',
+        openIn: 'dropdown',
+        expandInput: true,
+        source: function (autocomplete, query, render) {
+            var results = [];
+            // Find matched items
+            for (var i = 0; i < protocol.length; i++) {
+                if (protocol[i].toLowerCase().indexOf(query.toLowerCase()) >= 0) results.push(protocol[i]);
+            }
+            // Render items by passing array with result items
+            render(results);
+        }
+    });
+
+});
+myApp.onPageInit('event-step4', function (page) {
+    // run createContentPage func after link was clicked
+    var protocol =["12 Lead", "Contact/Consent" , "CPR", "Defib", "EKG", "EPINEPHrine","Event" ,"HPI", "Initial Assessment", "Intubate","IO","IV","Narcan","Oxygen" ,"Reeves","Stair Chair","Stretcher","Sugar","Transport","Vital Signs"];
     var autocompleteDropdownEvent = myApp.autocomplete({
         input: '#autocomplete-dropdown-event',
         openIn: 'dropdown',
