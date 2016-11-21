@@ -3,7 +3,11 @@ var myApp = new Framework7();
 
 // Export selectors engine
 var $$ = Dom7;
-
+$$('.prompt-title-ok').on('click', function () {
+    myApp.prompt('Enter a name for this folder', 'New Folder', function (value) {
+        myApp.alert('Your name is "' + value + '". You clicked Ok button');
+    });
+});
 // Add view
 var mainView = myApp.addView('.view-main', {
     // Because we use fixed-through navbar we can enable dynamic navbar
@@ -197,11 +201,7 @@ myApp.onPageInit('event-step3', function (page) {
 });
 
 
-$$('.prompt-title-ok').on('click', function () {
-    myApp.prompt('Enter a name for this folder', 'New Folder', function (value) {
-        myApp.alert('Your name is "' + value + '". You clicked Ok button');
-    });
-});
+
 
 
 
