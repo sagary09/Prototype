@@ -39,13 +39,6 @@
                 <ul class="progress-indicator stacked">
                   <li>
                       <span class="bubble"></span>
-                      <span class="time">1:30pm</span>
-                      <span class="stacked-text">
-                        Transport<br />
-                      </span>
-                  </li>
-                  <li>
-                      <span class="bubble"></span>
                       <span class="time">1:26pm</span>
                       <span class="stacked-text">
                         EPI<br />
@@ -229,15 +222,10 @@
               <!-- end step1 -->
 
               <!-- step2 -->
-                  <div class="check" id="check-deselect2" onclick="javascript:showDiv2();">
+                  <div class="check">
                     <p>If Patient has severe hypotension or impending cardiac arrest,<br /><span id="text-uppercase">begin Pacing immediately</span>
                     </p>
                     <label for="check"></label>
-                  </div>
-                  <div class="check check-select" id="check2" style="display:none">
-                    <p>If Patient has severe hypotension or impending cardiac arrest,<br /><span id="text-uppercase">begin Pacing immediately</span>
-                    </p>
-                    <img  src="img/check.svg" class="checkmark"></img>
                   </div>
                   <div class="arrow">&#8595;</div>
               <!-- end step2 -->
@@ -359,7 +347,7 @@
                     </p>
                       <img  src="img/check.svg" class="checkmark"></img>
                   </div>
-                  <a href="cases.html" id="complt-nar"><button>Complete Narrative</button></a>
+                  <a href="#narrative" id="complt-nar"><button>Complete Narrative</button></a>
                 </div><!--section3-->
               </div><!--bradyForm-->
             </div>
@@ -373,7 +361,7 @@
               </div>
             </div>
           </div>
-          <div class="swiper-slide">
+          <div class="swiper-slide" id="narrative">
             <div class="navbar">
               <div class="navbar-inner">
                 <div class="left sliding">
@@ -403,20 +391,28 @@
                   <h3>Treatments per PA Statewide ALS Protocol</h3>
                 </div>
                 <p contenteditable="true"id="txt1" style="display:none">
-                  <span>Consent- 1:00 PM</span>
-                  Arrived on scene and received consent
-                </p>
-                <p contenteditable="true"id="txt2" style="display:none">
-                  <span>Pacing- 1:10 PM</span>
-                  Initiated pacing at heart rate of 80 and 80 mAmps and obtained electrical capture.
+                  <span>Consent- 1:00 PM<br /> Vital Signs- 1:11 PM</span>
+                  Arrived on scene and received consent and initial assessment. Vital signs recorded (Blood Pressure-158/96)
                 </p>
                 <p contenteditable="true"id="txt3" style="display:none">
-                  <span>12 Lead- 1:12 PM</span>
+                  <span>Oxygen- 1:13 PM</span>
                   Maintained patient’s airway. Administered Oxygen 15 lpm NR Mask.  Monitored ECG bradycardia with third degree AV block.  Pulse Oximetry 94% on room air Initiated IV 18g left A/C NSS hep-lock.  12-Lead ECG bradycardia with third detgree AV block. Patient has signs of poor perfusion.
                 </p>
                 <p contenteditable="true"id="txt4" style="display:none">
-                  <span>Medical Command- 1:20 PM</span>
-                  Perfusion improved with pacing SBP>100.  Medical Command contacted to consider sedation options.
+                  <span>Atropine- 1:16 PM</span>
+                  0.5 mg of Atropine administered with IV.
+                </p>
+                <p contenteditable="true"id="txt5" style="display:none">
+                  <span>Pacing- 1:19 PM</span>
+                  Initiated pacing at heart rate of 80 and 80 mAmps and obtained electrical capture.
+                </p>
+                <p contenteditable="true"id="txt6" style="display:none">
+                  <span>Medical Command- 1:23 PM</span>
+                  Perfusion  not improved with pacing SBP>100.  Medical Command at Albert Einstein contacted to consider sedation options.
+                </p>
+                <p contenteditable="true"id="txt7" style="display:none">
+                  <span>EPINEPHrine- 1:26 PM</span>
+                  20mcg of EPINEPHrine administered through infusion.
                 </p>
               </div>
             </div>

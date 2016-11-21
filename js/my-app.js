@@ -60,14 +60,6 @@ function showDiv(){
     div=document.getElementById('check-deselect');
     div.style.display = 'none';
  }
-function showDiv2(){
-  div= document.getElementById('check2');
-  div.style.display = 'block';
-  div= document.getElementById('txt2');
-  div.style.display = 'block';
-  div=document.getElementById('check-deselect2');
-  div.style.display = 'none';
-}
 function showDiv3(){
   div= document.getElementById('check3');
   div.style.display = 'block';
@@ -87,11 +79,15 @@ function showDiv4(){
 function showDiv5(){
   div= document.getElementById('check5');
   div.style.display = 'block';
+  div= document.getElementById('txt5');
+  div.style.display = 'block';
   div=document.getElementById('check-deselect5');
   div.style.display = 'none';
 }
 function showDiv6(){
   div= document.getElementById('check6');
+  div.style.display = 'block';
+  div= document.getElementById('txt6');
   div.style.display = 'block';
   div=document.getElementById('check-deselect6');
   div.style.display = 'none';
@@ -99,15 +95,12 @@ function showDiv6(){
 function showDiv7(){
   div= document.getElementById('check7');
   div.style.display = 'block';
+  div= document.getElementById('txt7');
+  div.style.display = 'block';
   div=document.getElementById('check-deselect7');
   div.style.display = 'none';
 }
-function showDiv8(){
-  div= document.getElementById('check8');
-  div.style.display = 'block';
-  div=document.getElementById('check-deselect8');
-  div.style.display = 'none';
-}
+
 function click1(){
   document.all.section2.scrollIntoView(true);
 }
@@ -200,6 +193,13 @@ myApp.onPageInit('event-step3', function (page) {
             // Render items by passing array with result items
             render(results);
         }
+    });
+});
+
+
+$$('.prompt-title-ok').on('click', function () {
+    myApp.prompt('Enter a name for this folder', 'New Folder', function (value) {
+        myApp.alert('Your name is "' + value + '". You clicked Ok button');
     });
 });
 
