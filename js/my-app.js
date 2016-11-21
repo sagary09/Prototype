@@ -16,7 +16,7 @@ var mySwiper = myApp.swiper('.swiper-container', {
   });
 
 // Callbacks to run specific code for specific pages, for example for About page:
-myApp.onPageInit('empty_screens', function (page) {
+myApp.onPageInit('all_events', function (page) {
     // run createContentPage func after link was clicked
     var protocol =["3001-Airway Obsrtuction"," 3031A-General Cardiac Arrest","4001-Airway Management ", " 4002-Sedation-Assisted Intubation ","5021A-Bradycardia-Adult"," 5021P-Bradycardia-Pediatric", " 6003-Extremity Trauma"," 6004-Crush Syndrome" ];
     var autocompleteDropdownAll = myApp.autocomplete({
