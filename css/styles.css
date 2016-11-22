@@ -313,7 +313,8 @@ h3 {
   text-align: center;
 }
 /*Added Case*/
-.added_case_button {
+.added_case_button,
+.complete_case_button {
   margin: auto;
   background-color: #312E3E;
   width: 330px;
@@ -338,14 +339,16 @@ h3 {
   border-top-right-radius: 15px;
   border-top-left-radius: 15px;
 }
-.added_case_button span {
+.added_case_button span,
+.complete_case_button span {
   color: #898BA8;
   font-size: 14px;
   font-family: 'Roboto', sans-serif;
   font-weight: 400;
   padding-bottom: 5px;
 }
-.added_case_button::after {
+.added_case_button::after,
+.complete_case_button::after {
   display: block;
   background-color: #C73340;
   color: white;
@@ -367,6 +370,10 @@ h3 {
   -moz-border-radius-bottomright: 15px;
   border-bottom-left-radius: 15px;
   border-bottom-right-radius: 15px;
+}
+.complete_case_button::after {
+  content: "Complete";
+  background-color: #8cc63f;
 }
 /*Events Empty Screen*/
 .icon-back {

@@ -288,7 +288,7 @@ padding: 50px 0px 80px 0px;
   }
 }
 /*Added Case*/
-.added_case_button{
+.added_case_button, .complete_case_button{
   margin:auto;
   background-color:@midnight;
   width:330px;
@@ -318,7 +318,7 @@ padding: 50px 0px 80px 0px;
     padding-bottom: 5px;
   }
 }
-.added_case_button::after{
+.added_case_button::after,.complete_case_button::after{
   display:block;;
   background-color:@blood;
   color:white;
@@ -339,6 +339,10 @@ padding: 50px 0px 80px 0px;
   -moz-border-radius-bottomright: 15px;
   border-bottom-left-radius: 15px;
   border-bottom-right-radius: 15px;
+}
+.complete_case_button::after{
+    content:"Complete";
+    background-color: #8cc63f;
 }
 /*Events Empty Screen*/
 .icon-back{
