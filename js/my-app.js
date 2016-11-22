@@ -13,7 +13,11 @@ var mainView = myApp.addView('.view-main', {
 var mySwiper = myApp.swiper('.swiper-container', {
     pagination:'.swiper-pagination'
   });
-
+$$('.prompt-title-ok').on('click', function () {
+    myApp.prompt('What is your name?', 'Custom Title', function (value) {
+        myApp.alert('Your name is "' + value + '". You clicked Ok button');
+    });
+});
 // Callbacks to run specific code for specific pages, for example for About page:
 myApp.onPageInit('all_events', function (page) {
     // run createContentPage func after link was clicked
