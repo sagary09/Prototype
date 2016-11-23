@@ -104,9 +104,9 @@ function showDiv7(){
   div.style.display = 'none';
 }
 
-function click1(){
-  document.all.section2.scrollIntoView(true);
-}
+// function click1(){
+//   document.all.section2.scrollIntoView(true);
+// }
 function section2(){
   window.scrollTo(0,0);
 }
@@ -117,7 +117,19 @@ function section3(){
   window.scrollTo(0,0);
 }
 
-
+myApp.onPageInit('all_events',function (page){
+  // $$('#click1').on('click',function(e){
+  //   e.preventDefault();
+  //   console.log('hi');
+  //   $.scrollTo('#section2',1000,{
+  //     over:0.01
+  //   });
+  // })
+  console.log('hi');
+  $('#click1').localScroll({
+   target:'#section2'
+});
+})
 
 
 
