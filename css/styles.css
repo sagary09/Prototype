@@ -1247,13 +1247,13 @@ h3 {
   background: #C73340;
   margin: auto;
   display: block;
+  font-size: 17px;
 }
 .reg-button a {
   color: white;
   text-align: center;
   font-family: 'Roboto', sans-serif;
   font-weight: 400;
-  font-size: 20px;
   text-transform: uppercase;
 }
 .reg-thumb-cont img {
