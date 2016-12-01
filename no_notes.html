@@ -1,0 +1,75 @@
+
+<div class="pages">
+  <!-- Page, data-page contains page name-->
+  <div data-page="notes" class="page">
+    <!-- Scrollable page content-->
+    <div class="page-content">
+      <div class="navbar">
+        <div class="navbar-inner">
+          <div class="left">
+            <a href="#" class="link back">
+              <i class="icon-back">
+                <span id="back-text">Notes Folder</span>
+              </i>
+            </a>
+          </div>
+          <div class=" center navTitle">Notes<br />
+          </div>
+          <div class="right">
+            <i class="edit"><a href="#" data-popup=".popup-note"class="link open-popup"></a></i>
+          </div>
+        </div>
+      </div>
+      <div class="popup popup-notefolder">
+        <div class="navbar">
+          <div class="navbar-inner">
+            <div class="left">
+              <a href="#" class="link close-popup">
+                <i class="close"></i>
+              </a>
+            </div>
+            <div class="popup-navTitle">Add New Note</div>
+            <div class="right">
+              <i> </i>
+            </div>
+          </div>
+        </div>
+        <div class="content-block">
+          <div class="list-block">
+            <ul>
+              <li>
+                <div class="item-content">
+                  <div class="item-inner">
+                    <div class="item-input">
+                      <input type="text" placeholder="Note Title">
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <!--second input-->
+              <li>
+                <img src="img/paperclip.svg" style="width:100px; height:auto;"> </img> Add Attachment
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="content-block">
+          <div class="content-block-inner">
+            <div class="done-button">
+              <a href="notes.html" class="link close-popup"><button class="cases-button">Add</button></a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="content-block">
+        <div class="content-block-inner">
+          <div class="emptyScreen">
+            <img src="img/empty-folder.svg" class="ambulance" alt="empty" />
+            <p class="line1">Notes Folder is empty</p>
+            <p class="line2">Click on the <img src="img/edit.svg" alt="add" class="addSmall"> icon above to add a new note.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
