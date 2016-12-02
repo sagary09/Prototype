@@ -114,7 +114,7 @@ function myFunction(){
 }
 function myFunction2(){
     console.log('hello');
-    $$('.page-content').scrollTop($$('#section2').offset().top, 300);
+    $$('.page-content').scrollTop($$('#section3').offset().top, 300);
 }
 
 // function click1(){
