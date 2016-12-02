@@ -207,10 +207,10 @@ myApp.onPageInit('event-step3', function (page) {
         }
     });
 });
-function myFunction(){
-  console.log('hello');
-  $$('.page-content').scrollTop($$('#section2').offset().top, 300);
-}
+myApp.onPageInit('empty_screens',function myFunction(){
+    console.log('hello');
+    $$('.page-content').scrollTop($$('#section2').offset().top, 300);
+});
 
 // Generate dynamic page
 var dynamicPageIndex = 0;
