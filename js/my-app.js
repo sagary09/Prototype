@@ -10,14 +10,10 @@ var mainView = myApp.addView('.view-main', {
     dynamicNavbar: false
 });
 
+
 var mySwiper = myApp.swiper('.swiper-container', {
     pagination:'.swiper-pagination'
   });
-$$('.prompt-title-ok').on('click', function () {
-    myApp.prompt('What is your name?', 'Custom Title', function (value) {
-        myApp.alert('Your name is "' + value + '". You clicked Ok button');
-    });
-});
 // Callbacks to run specific code for specific pages, for example for About page:
 myApp.onPageInit('all_events', function (page) {
     // run createContentPage func after link was clicked
@@ -37,8 +33,9 @@ myApp.onPageInit('all_events', function (page) {
         }
     });
 });
+
 function show(value) {
-   if (value == "5021A-Bradycardia-Adult") {
+   if (value == "3001-Airway Obsrtuction"," 3031A-General Cardiac Arrest","4001-Airway Management ", " 4002-Sedation-Assisted Intubation ","5021A-Bradycardia-Adult"," 5021P-Bradycardia-Pediatric", " 6003-Extremity Trauma"," 6004-Crush Syndrome") {
      document.getElementById('bradyForm').style.display = 'inline';
      document.getElementById('narrTitle').style.display = 'block'
      document.getElementById('emptyPro').style.display = 'none';
@@ -210,11 +207,10 @@ myApp.onPageInit('event-step3', function (page) {
         }
     });
 });
-
-
-
-
-
+function myFunction(){
+  console.log('hello');
+  $$('.page-content').scrollTop($$('#section2').offset().top, 300);
+}
 
 // Generate dynamic page
 var dynamicPageIndex = 0;
