@@ -100,19 +100,15 @@ function showDiv7(){
   div=document.getElementById('check-deselect7');
   div.style.display = 'none';
 }
+function myFunction(){
+    console.log('hello');
+    $$('.page-content').scrollTop($$('#section2').offset().top, 300);
+}
 
 // function click1(){
 //   document.all.section2.scrollIntoView(true);
 // }
-function section2(){
-  window.scrollTo(0,0);
-}
-function click2(){
-  document.all.section3.scrollIntoView(true);
-}
-function section3(){
-  window.scrollTo(0,0);
-}
+
 
 myApp.onPageInit('all_events',function (page){
   // $$('#click1').on('click',function(e){
@@ -122,10 +118,7 @@ myApp.onPageInit('all_events',function (page){
   //     over:0.01
   //   });
   // })
-  console.log('hi');
-  $('#click1').localScroll({
-   target:'#section2'
-});
+
 })
 
 
@@ -207,10 +200,7 @@ myApp.onPageInit('event-step3', function (page) {
         }
     });
 });
-function myFunction(){
-    console.log('hello');
-    $$('.page-content').scrollTop($$('#section2').offset().top, 300);
-}
+
 
 // Generate dynamic page
 var dynamicPageIndex = 0;
