@@ -60,6 +60,14 @@ function showDiv(){
     div=document.getElementById('check-deselect');
     div.style.display = 'none';
  }
+ function showDiv2(){
+     div= document.getElementById('check2');
+     div.style.display = 'block';
+     div= document.getElementById('txt1');
+     div.style.display = 'block';
+     div=document.getElementById('check-deselect');
+     div.style.display = 'none';
+  }
 function showDiv3(){
   div= document.getElementById('check3');
   div.style.display = 'block';
