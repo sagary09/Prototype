@@ -104,6 +104,10 @@ function myFunction(){
     console.log('hello');
     $$('.page-content').scrollTop($$('#section2').offset().top, 300);
 }
+function myFunction2(){
+    console.log('hello');
+    $$('.page-content').scrollTop($$('#section2').offset().top, 300);
+}
 
 // function click1(){
 //   document.all.section2.scrollIntoView(true);
