@@ -132,12 +132,12 @@ function myFunction(){
     $$('.page-content').scrollTop($$('#section2').offset().top, 300);
 }
 function myFunction2(){
-    console.log('hello');
+    console.log('testing');
     $$('.page-content').scrollTop($$('#section3').offset().top, 300);
 }
 function up1(){
-    console.log('hello');
-    $$('.page-content').scrollTop($$('#section1').offset().top, 300);
+    console.log('test');
+    $$('.page-content').scrollTop(0, 300);
 }
 
 // function click1(){
