@@ -106,23 +106,17 @@ function showDiv4(){
 function showDiv5(){
   div= document.getElementById('check5');
   div.style.display = 'block';
-  div= document.getElementById('txt5');
-  div.style.display = 'block';
   div=document.getElementById('check-deselect5');
   div.style.display = 'none';
 }
 function showDiv6(){
   div= document.getElementById('check6');
   div.style.display = 'block';
-  div= document.getElementById('txt6');
-  div.style.display = 'block';
   div=document.getElementById('check-deselect6');
   div.style.display = 'none';
 }
 function showDiv7(){
   div= document.getElementById('check7');
-  div.style.display = 'block';
-  div= document.getElementById('txt7');
   div.style.display = 'block';
   div=document.getElementById('check-deselect7');
   div.style.display = 'none';
@@ -133,7 +127,7 @@ function myFunction(){
 }
 function myFunction2(){
     console.log('testing');
-    $$('.page-content').scrollTop($$('#section3').offset().top, 300);
+    $$('.page-content').scrollTop($$('#section3').offset().top+667, 300);
 }
 function up1(){
     console.log('test');

@@ -1058,6 +1058,9 @@ h3 {
   font-size: 14px;
   color: #312E3E;
 }
+#section2 {
+  height: 667px;
+}
 #section2 .Y-N_buttons {
   padding-top: 35px;
 }
@@ -1087,6 +1090,11 @@ h3 {
   margin-top: -10px;
   margin-bottom: 40px;
   font-size: 17px;
+}
+#section3 .check {
+  padding-top: 15px;
+  padding-bottom: 15px;
+  margin-top: 20px;
 }
 #complt-nar button {
   text-align: center;
