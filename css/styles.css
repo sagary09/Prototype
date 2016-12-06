@@ -1019,7 +1019,7 @@ h3 {
 .Y-N_buttons {
   display: inline-flex;
   padding: 13px 5px;
-  margin-bottom: 20px;
+  margin-bottom: 0px;
 }
 .Y-N_buttons a {
   color: pink;
@@ -1041,7 +1041,6 @@ h3 {
   background-color: #312E3E;
   padding: 16px 61px;
   color: white;
-  margin-bottom: 40px;
   box-shadow: 1px 2px 3px rgba(101, 101, 101, 0.25);
 }
 .arrow-up {
@@ -1058,11 +1057,8 @@ h3 {
   font-size: 14px;
   color: #312E3E;
 }
-#section2 {
-  height: 667px;
-}
 #section2 .Y-N_buttons {
-  padding-top: 35px;
+  padding-top: 25px;
 }
 #section2 .proto_Cont_block {
   margin-top: 30px;
@@ -1077,14 +1073,19 @@ h3 {
   font-size: 17px;
 }
 #section3 {
-  height: 667px;
+  height: 730px;
+  overflow: hidden;
 }
 #section3 .proto_Cont_block {
   margin-top: 30px;
   padding: 15px;
 }
+#section3 label {
+  top: 25px;
+}
 #section3 .arrow-up {
-  margin-top: -15px;
+  margin-top: 10px;
+  margin-bottom: 20px;
 }
 #section3 .arrow-up p {
   margin-top: -10px;
@@ -1105,9 +1106,8 @@ h3 {
   color: #FFFFFF;
   outline: 0;
   background-color: #898BA8;
-  margin-bottom: 20px;
   margin-left: 10px;
-  margin-top: 10px;
+  margin-top: 40px;
   width: 90%;
   font-size: 17px;
   padding: 18px;
