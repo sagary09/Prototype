@@ -14,7 +14,7 @@
             <div class="navbar">
               <div class="navbar-inner">
                 <div class="left sliding">
-                  <a href="added-case.html" class="link">
+                  <a href="added-case.html" class="link back">
                     <i class="icon-back">
                       <span id="back-text">CASES</span>
                     </i>
@@ -103,8 +103,246 @@
           </div>
           <!-- Protocol -->
           <div class="swiper-slide">
+            <div class="navbar">
+              <div class="navbar-inner">
+                <div class="left sliding">
+                  <a href="added-case.html" class="link">
+                    <i class="icon-back">
+                      <span id="back-text">CASES</span>
+                    </i>
+                  </a>
+                </div>
+                <div class="event-navTitle2">Protocol
+                  <div class="swiper-pagination"></div>
+                </div>
+                <div class="right sliding">
+                  <a href="#" class="link">
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="content-block">
+              <div class="content-block-inner event_Cont_block">
+                <p>Bradycardia</p>
+              </div>
+              <div class="list-block protocol-block">
+                <ul>
+                  <li class="item-content">
+                    <div class="item-input protocol-dropdown">
+                      <input type="text" placeholder="Select Protocol" id="autocomplete-dropdown-all" onchange="javascript:show(value)">
+                    </div>
+                  </li>
+                </ul>
+              </div>
+              <div id="bradyForm" style="display:none">
+                <div id="section1">
+              <!-- step1 -->
+                  <div class="check" id="check-deselect" onclick="javascript:showDiv();">
+                    <p>Initial Patient Contact- Protocol # 201</p>
+                    <label for="check"></label>
+                  </div>
+                  <!--check select 1 -->
+                  <div class="check check-select" id="check1" style="display:none">
+                    <p>Initial Patient Contact- Protocol # 201</p>
+                    <img  src="img/check.svg" class="checkmark"></img>
+                  </div>
+                  <div class="arrow">&#8595;</div>
+
+              <!-- end step1 -->
+
+              <!-- step2 -->
+                  <div class="check" id="check-deselect2" onclick="javascript:showDiv2();">
+                    <p>If Patient has severe hypotension or impending cardiac arrest,<br /><span id="text-uppercase">begin Pacing immediately</span>
+                    </p>
+                    <label for="check"></label>
+                  </div>
+                  <div class="check check-select" id="check2" style="display:none">
+                    <p>If Patient has severe hypotension or impending cardiac arrest,<br /><span id="text-uppercase">begin Pacing immediately</span>
+                    </p>
+                    <img  src="img/check.svg" class="checkmark"></img>
+                  </div>
+                  <div class="arrow">&#8595;</div>
+              <!-- end step2 -->
+              <!-- step3 -->
+                  <div class="check" id="check-deselect3" onclick="javascript:showDiv3();">
+                    <p>
+                    Maintain Airway/ Ventilate, if needed. <span id="text-bold">Administer Oxygen Monitor, ECG &#38; Pulse Oximetry </span>
+                  Initiate IV/IO NSS Consider 12-Lead, if available
+                    </p>
+                    <label for="check"></label>
+                  </div>
+                  <div class="check check-select" id="check3" style="display:none">
+                    <p>
+                    Maintain Airway/ Ventilate, if needed. <span id="text-bold">Administer Oxygen Monitor, ECG &#38; Pulse Oximetry </span>
+                  Initiate IV/IO NSS Consider 12-Lead, if available
+                    </p>
+                    <img  src="img/check.svg" class="checkmark"></img>
+                  </div>
+                  <div class="arrow">&#8595;</div>
+              <!-- end step3 -->
+                  <div class="content-block">
+                    <div class="content-block-inner proto_Cont_block">
+                      <p><span>Signs or Symptoms of poor perfusion?<br /></span>
+                        (acute altered mental status, ongoing chest pain, hypotension, or signs of shock)</p>
+                    </div>
+                  </div>
+                  <div class="Y-N_buttons">
+                    <a href="#section2" id="click1" onclick="javascript:myFunction();"><button>Yes</button></a>
+                    <a href="#"><button>No&nbsp;</button></a>
+                  </div>
+                </div><!--section1-->
+          <!-- section2 -->
+                <div id="section2">
+                  <div class="arrow-up" onclick="up1();">
+                    <img src="img/up_arrow.svg" alt="arrow"></img>
+                    <p>Signs/Symptoms of poor perfusion<p>
+                  </div>
+                  <div class="check" id="check-deselect4" onclick="javascript:showDiv4();">
+                    <p><span id="text-bold" >Atropine 0.5 mg IV/IO</span>
+                    while preparing Pacer (May repeat if needed to maximum of 3 mg)</p>
+                      <label for="check"></label>
+                  </div>
+                  <div class="check check-select" id="check4" style="display:none">
+                    <p><span id="text-bold" >Atropine 0.5 mg IV/IO</span>
+                    while preparing Pacer (May repeat if needed to maximum of 3 mg)</p>
+                      <img  src="img/check.svg" class="checkmark"></img>
+                  </div>
+                  <p id="or">OR</p>
+              <!-- end step1 -->
+              <!-- step1 -->
+                  <div class="check" id="check-deselect5" onclick="javascript:showDiv5();">
+                    <p> <span id="text-bold" >Begin Pacing, Sedation </span>
+                    Initial dose if needed
+                    </p>
+                      <label for="check"></label>
+                      <a href="#"><button>View Sedation Options</button></a>
+                  </div>
+                  <div class="check check-select" id="check5" style="display:none">
+                    <p> <span id="text-bold" >Begin Pacing, Sedation </span>
+                    Initial dose if needed
+                    </p>
+                      <img  src="img/check.svg" class="checkmark"></img>
+                      <a href="#"><button>View Sedation Options</button></a>
+                  </div>
+                  <div class="arrow">&#8595;</div>
+                <!-- end step1 -->
+                  <div class="content-block">
+                    <div class="content-block-inner proto_Cont_block">
+                      <p>Pacing effective AND SBP > 100 mm/Hg</p>
+                    </div>
+                  </div>
+                  <div class="Y-N_buttons">
+                    <a href="#" id="click2"><button>Yes</button></a>
+                    <!-- <a href="#section3"><button>No</button></a> -->
+                    <a href="#"onclick="javascript:myFunction2();"><button>No</button></a>
+                  </div>
+                </div> <!--section2-->
+                <div id="section3">
+                  <div class="arrow-up">
+                    <img src="img/up_arrow.svg" alt="arrow"></img>
+                    <p>Pacing not effective OR SBP < 100 mm/Hg<p>
+                  </div>
+                  <div class="check" id="check-deselect6" onclick="javascript:showDiv6();">
+                    <p>Contact Medical Command</p>
+                      <label for="check"></label>
+                  </div>
+                  <div class="check check-select" id="check6" style="display:none">
+                    <p>Contact Medical Command</p>
+                      <img  src="img/check.svg" class="checkmark"></img>
+                  </div>
+                  <div class="arrow">&#8595;</div>
+                <!-- end step1 -->
+                  <div class="check" id="check-deselect7" onclick="javascript:showDiv7();">
+                    <p>
+                      <span id="text-bold" >EPINEPHrine9</span>
+                      Push dose (diluted) 10-20 mcg boluses or infusion
+                    </p>
+                      <label for="check"></label>
+                  </div>
+                  <div class="check check-select" id="check7" style="display:none">
+                    <p>
+                      <span id="text-bold" >EPINEPHrine9</span>
+                      Push dose (diluted) 10-20 mcg boluses or infusion
+                    </p>
+                      <img  src="img/check.svg" class="checkmark"></img>
+                  </div>
+                  <p id="or">OR</p>
+
+                  <div class="check" id="check-deselect8" onclick="javascript:showDiv8();">
+                    <p>
+                      <span id="text-bold" >DOPAmine</span>
+                      Infusion 10, repeat additional sedation
+                    </p>
+                      <label for="check"></label>
+                  </div>
+                  <div class="check check-select" id="check8" style="display:none">
+                    <p>
+                      <span id="text-bold" >DOPAmine</span>
+                      Infusion 10, repeat additional sedation
+                    </p>
+                      <img  src="img/check.svg" class="checkmark"></img>
+                  </div>
+                  <a href="cases.html" id="complt-nar"><button>Complete Narrative</button></a>
+                </div><!--section3-->
+              </div><!--bradyForm-->
+            </div>
+            <div id="emptyPro"class="content-block">
+              <div class="content-block-inner">
+                <div class="emptyScreen">
+                  <img src="img/protocol.svg" class="ambulance" alt="protocol" />
+                  <p class="line1">Select a Protocol</p>
+                  <p class="line2">The protocol will help generate a narrative based on the selections you choose.</p>
+                </div>
+              </div>
+            </div>
           </div>
           <div class="swiper-slide">
+            <div class="navbar">
+              <div class="navbar-inner">
+                <div class="left sliding">
+                  <a href="added-case.html" class="link">
+                    <i class="icon-back">
+                      <span id="back-text">CASES</span>
+                    </i>
+                  </a>
+                </div>
+                <div class="event-navTitle3">Narrative
+                  <div class="swiper-pagination"></div>
+                </div>
+                <div class="right sliding">
+                  <a href="#" class="link">
+                    <i class="sync"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="content-block">
+              <div class="content-block-inner event_Cont_block">
+                <p>Bradycardia</p>
+              </div>
+              <div class="narrative-temp" id="narrTitle" style="display:none">
+                <div class="narr-title">
+                  <h1>Adult Bradycardia-5021</h1>
+                  <h3>Treatments per PA Statewide ALS Protocol</h3>
+                </div>
+                <p contenteditable="true"id="txt1" style="display:none">
+                  <span>Consent- 1:00 PM</span>
+                  Arrived on scene and received consent
+                </p>
+                <p contenteditable="true"id="txt2" style="display:none">
+                  <span>Pacing- 1:10 PM</span>
+                  Initiated pacing at heart rate of 80 and 80 mAmps and obtained electrical capture.
+                </p>
+                <p contenteditable="true"id="txt3" style="display:none">
+                  <span>12 Lead- 1:12 PM</span>
+                  Maintained patient’s airway. Administered Oxygen 15 lpm NR Mask.  Monitored ECG bradycardia with third degree AV block.  Pulse Oximetry 94% on room air Initiated IV 18g left A/C NSS hep-lock.  12-Lead ECG bradycardia with third detgree AV block. Patient has signs of poor perfusion.
+                </p>
+                <p contenteditable="true"id="txt4" style="display:none">
+                  <span>Medical Command- 1:20 PM</span>
+                  Perfusion improved with pacing SBP>100.  Medical Command contacted to consider sedation options.
+                </p>
+              </div>
+            </div>
           </div> <!--swiper-slide-->
         </div> <!--swiper-wrapper-->
       </div> <!--swiper-container-->

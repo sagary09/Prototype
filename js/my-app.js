@@ -33,6 +33,25 @@ myApp.onPageInit('all_events', function (page) {
         }
     });
 });
+myApp.onPageInit('empty_screens', function (page) {
+    // run createContentPage func after link was clicked
+    var protocol =["3001-Airway Obsrtuction"," 3031A-General Cardiac Arrest","4001-Airway Management ", " 4002-Sedation-Assisted Intubation ","5021A-Bradycardia-Adult"," 5021P-Bradycardia-Pediatric", " 6003-Extremity Trauma"," 6004-Crush Syndrome" ];
+    var autocompleteDropdownAll = myApp.autocomplete({
+        input: '#autocomplete-dropdown-all',
+        openIn: 'dropdown',
+        expandInput: true,
+        source: function (autocomplete, query, render) {
+            var results = [];
+            // Find matched items
+            for (var i = 0; i < protocol.length; i++) {
+                if (protocol[i].toLowerCase().indexOf(query.toLowerCase()) >= 0) results.push(protocol[i]);
+            }
+            // Render items by passing array with result items
+            render(results);
+        }
+    });
+});
+
 
 function show(value) {
    if (value == "3001-Airway Obsrtuction"," 3031A-General Cardiac Arrest","4001-Airway Management ", " 4002-Sedation-Assisted Intubation ","5021A-Bradycardia-Adult"," 5021P-Bradycardia-Pediatric", " 6003-Extremity Trauma"," 6004-Crush Syndrome") {
@@ -65,7 +84,7 @@ function showDiv(){
      div.style.display = 'block';
      div= document.getElementById('txt1');
      div.style.display = 'block';
-     div=document.getElementById('check-deselect');
+     div=document.getElementById('check-deselect2');
      div.style.display = 'none';
   }
 function showDiv3(){
@@ -115,6 +134,10 @@ function myFunction(){
 function myFunction2(){
     console.log('hello');
     $$('.page-content').scrollTop($$('#section3').offset().top, 300);
+}
+function up1(){
+    console.log('hello');
+    $$('.page-content').scrollTop($$('#section1').offset().top, 300);
 }
 
 // function click1(){
