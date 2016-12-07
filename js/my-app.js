@@ -139,7 +139,6 @@ function show(value) {
    }
 }
 
-
 function show2(value) {
    if (value == "Vital Signs") {
      document.getElementById('vitals').style.display = 'inline';

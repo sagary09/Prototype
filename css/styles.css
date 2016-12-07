@@ -504,7 +504,7 @@ h3 {
 #vitals img {
   width: 20px;
   position: absolute;
-  margin-top: 22px;
+  margin-top: 15px;
 }
 #vitals ::-webkit-input-placeholder {
   /* Chrome/Opera/Safari */
