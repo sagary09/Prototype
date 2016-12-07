@@ -625,12 +625,16 @@ h3 {
   -webkit-transform-origin: 50% 100%;
   transform-origin: 50% 100%;
 }
+.narrative-temp .arrow-up {
+  float: right;
+  display: none;
+}
 .narrative-temp p {
   color: #312E3E;
   font-size: 17px;
   font-family: 'Roboto', sans-serif;
   font-weight: 400;
-  line-height: 1.5;
+  line-height: 2;
 }
 .narrative-temp p span {
   color: #898BA8;
@@ -639,6 +643,7 @@ h3 {
   font-weight: 700;
   text-align: left;
   margin-left: -1px;
+  line-height: 1.25;
 }
 .narrative-temp h1 {
   color: #312E3E;
@@ -1075,6 +1080,10 @@ h3 {
   margin-top: -10px;
   margin-bottom: 55px;
   font-size: 17px;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  text-align: center;
+  color: #312E3E;
 }
 #section3 {
   height: 730px;
@@ -1126,6 +1135,21 @@ h3 {
 }
 #bradyForm {
   background-color: white;
+}
+.swiper-container-autoheight,
+.swiper-container-autoheight .swiper-slide {
+  height: auto;
+}
+.swiper-container-autoheight .swiper-wrapper {
+  -webkit-box-align: start;
+  -ms-flex-align: start;
+  -webkit-align-items: flex-start;
+  align-items: flex-start;
+  -webkit-transition-property: -webkit-transform, height;
+  -moz-transition-property: -moz-transform;
+  -o-transition-property: -o-transform;
+  -ms-transition-property: -ms-transform;
+  transition-property: transform, height;
 }
 /*Notes*/
 .edit {

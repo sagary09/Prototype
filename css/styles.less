@@ -560,17 +560,22 @@ padding: 50px 0px 80px 0px;
     transform-origin: 50% 100%;
   }
 .narrative-temp{
+  .arrow-up{
+    float:right;
+    display: none;
+  }
   p{
     color:@midnight;
     font-size: 17px;
     .RobotoRegular;
-    line-height: 1.5;
+    line-height: 2;
     span{
       color:@bandaid;
       font-size: 16px;
       .RobotoBold;
       text-align: left;
       margin-left: -1px;
+      line-height: 1.25;
     }
   }
   h1{
@@ -942,6 +947,9 @@ padding: 50px 0px 80px 0px;
       margin-top: -10px;
       margin-bottom: 55px;
       font-size:17px;
+      .RobotoRegular;
+      text-align: center;
+      color:@midnight;
     }
   }
 }
@@ -991,6 +999,21 @@ padding: 50px 0px 80px 0px;
 }
 #bradyForm{
   background-color: white;
+}
+.swiper-container-autoheight,
+.swiper-container-autoheight .swiper-slide {
+height: auto;
+}
+.swiper-container-autoheight .swiper-wrapper {
+-webkit-box-align: start;
+-ms-flex-align: start;
+-webkit-align-items: flex-start;
+align-items: flex-start;
+-webkit-transition-property: -webkit-transform, height;
+-moz-transition-property: -moz-transform;
+-o-transition-property: -o-transform;
+-ms-transition-property: -ms-transform;
+transition-property: transform, height;
 }
 /*Notes*/
 .edit{
