@@ -124,17 +124,17 @@ myApp.onPageInit('all_events', function (page) {
             render(results);
         }
     });
+    function show(value) {
+       if (value == "3001-Airway Obsrtuction"," 3031A-General Cardiac Arrest","4001-Airway Management ", " 4002-Sedation-Assisted Intubation ","5021A-Bradycardia-Adult"," 5021P-Bradycardia-Pediatric", " 6003-Extremity Trauma"," 6004-Crush Syndrome") {
+         document.getElementById('bradyForm').style.display = 'inline';
+         document.getElementById('narrTitle').style.display = 'block'
+         document.getElementById('emptyPro').style.display = 'none';
+       }
+       else{
+       bradyForm.style.display='none';
+       }
+    }
 });
-function show(value) {
-   if (value == "3001-Airway Obsrtuction"," 3031A-General Cardiac Arrest","4001-Airway Management ", " 4002-Sedation-Assisted Intubation ","5021A-Bradycardia-Adult"," 5021P-Bradycardia-Pediatric", " 6003-Extremity Trauma"," 6004-Crush Syndrome") {
-     document.getElementById('bradyForm').style.display = 'inline';
-     document.getElementById('narrTitle').style.display = 'block'
-     document.getElementById('emptyPro').style.display = 'none';
-   }
-   else{
-   bradyForm.style.display='none';
-   }
-}
 
 function show2(value) {
    if (value == "Vital Signs") {
