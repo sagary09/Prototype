@@ -15,9 +15,6 @@ var mySwiper = myApp.swiper('.swiper-container', {
     pagination:'.swiper-pagination',
   });
 
-var mySwiper = new Swiper ('.swiper-container', {
-	autoHeight: true,
-});
 // Callbacks to run specific code for specific pages, for example for About page:
 
 myApp.onPageInit('empty_screens', function (page) {

@@ -1136,10 +1136,6 @@ h3 {
 #bradyForm {
   background-color: white;
 }
-.swiper-container-autoheight,
-.swiper-container-autoheight .swiper-slide {
-  height: auto;
-}
 .swiper-container-autoheight .swiper-wrapper {
   -webkit-box-align: start;
   -ms-flex-align: start;
