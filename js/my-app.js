@@ -138,7 +138,7 @@ function show(value) {
    bradyForm.style.display='none';
    }
 }
-function event1Show(value) {
+function show1(value) {
    if (value == "3001-Airway Obsrtuction"," 3031A-General Cardiac Arrest","4001-Airway Management ", " 4002-Sedation-Assisted Intubation ","5021A-Bradycardia-Adult"," 5021P-Bradycardia-Pediatric", " 6003-Extremity Trauma"," 6004-Crush Syndrome") {
      document.getElementById('bradyForm').style.display = 'inline';
      document.getElementById('narrTitle').style.display = 'block'
@@ -148,46 +148,7 @@ function event1Show(value) {
    bradyForm.style.display='none';
    }
 }
-function event2Show(value) {
-   if (value == "3001-Airway Obsrtuction"," 3031A-General Cardiac Arrest","4001-Airway Management ", " 4002-Sedation-Assisted Intubation ","5021A-Bradycardia-Adult"," 5021P-Bradycardia-Pediatric", " 6003-Extremity Trauma"," 6004-Crush Syndrome") {
-     document.getElementById('bradyForm').style.display = 'inline';
-     document.getElementById('narrTitle').style.display = 'block'
-     document.getElementById('emptyPro').style.display = 'none';
-   }
-   else{
-   bradyForm.style.display='none';
-   }
-}
-function event3Show(value) {
-   if (value == "3001-Airway Obsrtuction"," 3031A-General Cardiac Arrest","4001-Airway Management ", " 4002-Sedation-Assisted Intubation ","5021A-Bradycardia-Adult"," 5021P-Bradycardia-Pediatric", " 6003-Extremity Trauma"," 6004-Crush Syndrome") {
-     document.getElementById('bradyForm').style.display = 'inline';
-     document.getElementById('narrTitle').style.display = 'block'
-     document.getElementById('emptyPro').style.display = 'none';
-   }
-   else{
-   bradyForm.style.display='none';
-   }
-}
-function event4Show(value) {
-   if (value == "3001-Airway Obsrtuction"," 3031A-General Cardiac Arrest","4001-Airway Management ", " 4002-Sedation-Assisted Intubation ","5021A-Bradycardia-Adult"," 5021P-Bradycardia-Pediatric", " 6003-Extremity Trauma"," 6004-Crush Syndrome") {
-     document.getElementById('bradyForm').style.display = 'inline';
-     document.getElementById('narrTitle').style.display = 'block'
-     document.getElementById('emptyPro').style.display = 'none';
-   }
-   else{
-   bradyForm.style.display='none';
-   }
-}
-function event5Show(value) {
-   if (value == "3001-Airway Obsrtuction"," 3031A-General Cardiac Arrest","4001-Airway Management ", " 4002-Sedation-Assisted Intubation ","5021A-Bradycardia-Adult"," 5021P-Bradycardia-Pediatric", " 6003-Extremity Trauma"," 6004-Crush Syndrome") {
-     document.getElementById('bradyForm').style.display = 'inline';
-     document.getElementById('narrTitle').style.display = 'block'
-     document.getElementById('emptyPro').style.display = 'none';
-   }
-   else{
-   bradyForm.style.display='none';
-   }
-}
+
 function show2(value) {
    if (value == "Vital Signs") {
      document.getElementById('vitals').style.display = 'inline';
