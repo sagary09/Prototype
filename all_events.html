@@ -200,7 +200,7 @@
                 <ul>
                   <li class="item-content">
                     <div class="item-input protocol-dropdown">
-                      <input type="text" placeholder="Select Protocol" id="autocomplete-dropdown-all5" onchange="javascript:show(value)">
+                      <input type="text" placeholder="Select Protocol" id="autocomplete-dropdown-all" onchange="javascript:showProtocol(value)">
                     </div>
                   </li>
                 </ul>
@@ -371,73 +371,71 @@
             </div>
           </div>
           <div class="swiper-slide">
-            <div id="swiper-slide-narrative">
-              <div class="navbar">
-                <div class="navbar-inner">
-                  <div class="left sliding">
-                    <a href="added-case.html" class="link">
-                      <i class="icon-back">
-                        <span id="back-text">CASES</span>
-                      </i>
-                    </a>
-                  </div>
-                  <div class="event-navTitle3">Narrative
-                    <div class="swiper-pagination"></div>
-                  </div>
-                  <div class="right sliding">
-                    <a href="complete-case.html" class="link no-animation">
-                      <img class="add" src="img/sync.svg" style="width:40px; height:40px;"></img>
-                    </a>
-                  </div>
+            <div class="navbar">
+              <div class="navbar-inner">
+                <div class="left sliding">
+                  <a href="added-case.html" class="link">
+                    <i class="icon-back">
+                      <span id="back-text">CASES</span>
+                    </i>
+                  </a>
+                </div>
+                <div class="event-navTitle3">Narrative
+                  <div class="swiper-pagination"></div>
+                </div>
+                <div class="right sliding">
+                  <a href="complete-case.html" class="link no-animation">
+                    <img class="add" src="img/sync.svg" style="width:40px; height:40px;"></img>
+                  </a>
                 </div>
               </div>
-              <div class="content-block">
-                <div class="content-block-inner event_Cont_block">
-                  <p>Bradycardia</p>
+            </div>
+            <div class="content-block">
+              <div class="content-block-inner event_Cont_block">
+                <p>Bradycardia</p>
+              </div>
+              <div class="narrative-temp" id="narrTitle" style="display:none">
+                <div class="narr-title">
+                  <h1>Adult Bradycardia-5021</h1>
+                  <h3>Treatments per PA Statewide ALS Protocol</h3>
                 </div>
-                <div class="narrative-temp" id="narrTitle" style="display:none">
-                  <div class="narr-title">
-                    <h1>Adult Bradycardia-5021</h1>
-                    <h3>Treatments per PA Statewide ALS Protocol</h3>
-                  </div>
-                  <p contenteditable="true"id="txt1" style="display:none">
-                    <span>Consent- 1:00 PM</span>
-                    <span>Initial Assessment- 1:10 PM</span>
-                    <span>Vital Signs- 1:11 PM</span>
-                    Arrived on scene and received consent to treat patient. Gathered initial assessment of patient.
-                    Took initial vital readings of patient. Blood pressure of patient was 158/96.
-                  </p>
-                  <p contenteditable="true"id="txt2" style="display:none">
-                    <span>Pacing- 1:11 PM</span>
-                    Initiated pacing at heart rate of 80 and 80 mAmps and obtained electrical capture.
-                  </p>
-                  <p contenteditable="true"id="txt3" style="display:none">
-                    <span>12 Lead- 1:12 PM</span>
-                    <span>Oxygen- 1:13 PM</span>
-                    Maintained patient’s airway. Administered Oxygen 15 lpm NR Mask.  Monitored ECG bradycardia with third degree AV block.  Pulse Oximetry 94% on room air Initiated IV 18g left A/C NSS hep-lock.  12-Lead ECG bradycardia with third detgree AV block. Patient has signs of poor perfusion.
-                  </p>
-                  <p contenteditable="true"id="txt4" style="display:none">
-                    <span>Atropine- 1:15 PM</span>
-                    Signs and symptoms of poor purfusion. Administered 0.5mg of Atropine with an IV.
-                  </p>
-                  <p contenteditable="true"id="txt5" style="display:none">
-                    <span>Pacing- 1:19 PM</span>
-                    Initiated pacing at heart rate of 80 and 80 mAmps and obtained electrical capture.
-                  </p>
-                  <p contenteditable="true"id="txt6" style="display:none">
-                    <span>Medical Command- 1:20 PM</span>
-                    Perfusion did not improve with pacing SBP < 100.  Medical Command contacted to consider sedation options.
-                  </p>
-                  <p contenteditable="true"id="txt7" style="display:none">
-                    <span>EPI-1:26 PM</span>
-                    2 doses of 10 mcg of EPINEPHrine administered with infusion.
-                  </p>
-                  <p contenteditable="true"id="txt8" style="display:none">
-                    <span>Transport-1:30 PM</span>
-                    Patient's heart rate improved with EPINEPHrine. Patient transported to Albert Einstein Medical Center.
-                  </p>
-                  <a href="#" onclick="up4();" id="button_up" class="arrow-up"><img src="img/up_arrow-45.png"></img></a>
-                </div>
+                <p contenteditable="true"id="txt1" style="display:none">
+                  <span>Consent- 1:00 PM</span>
+                  <span>Initial Assessment- 1:10 PM</span>
+                  <span>Vital Signs- 1:11 PM</span>
+                  Arrived on scene and received consent to treat patient. Gathered initial assessment of patient.
+                  Took initial vital readings of patient. Blood pressure of patient was 158/96.
+                </p>
+                <p contenteditable="true"id="txt2" style="display:none">
+                  <span>Pacing- 1:11 PM</span>
+                  Initiated pacing at heart rate of 80 and 80 mAmps and obtained electrical capture.
+                </p>
+                <p contenteditable="true"id="txt3" style="display:none">
+                  <span>12 Lead- 1:12 PM</span>
+                  <span>Oxygen- 1:13 PM</span>
+                  Maintained patient’s airway. Administered Oxygen 15 lpm NR Mask.  Monitored ECG bradycardia with third degree AV block.  Pulse Oximetry 94% on room air Initiated IV 18g left A/C NSS hep-lock.  12-Lead ECG bradycardia with third detgree AV block. Patient has signs of poor perfusion.
+                </p>
+                <p contenteditable="true"id="txt4" style="display:none">
+                  <span>Atropine- 1:15 PM</span>
+                  Signs and symptoms of poor purfusion. Administered 0.5mg of Atropine with an IV.
+                </p>
+                <p contenteditable="true"id="txt5" style="display:none">
+                  <span>Pacing- 1:19 PM</span>
+                  Initiated pacing at heart rate of 80 and 80 mAmps and obtained electrical capture.
+                </p>
+                <p contenteditable="true"id="txt6" style="display:none">
+                  <span>Medical Command- 1:20 PM</span>
+                  Perfusion did not improve with pacing SBP < 100.  Medical Command contacted to consider sedation options.
+                </p>
+                <p contenteditable="true"id="txt7" style="display:none">
+                  <span>EPI-1:26 PM</span>
+                  2 doses of 10 mcg of EPINEPHrine administered with infusion.
+                </p>
+                <p contenteditable="true"id="txt8" style="display:none">
+                  <span>Transport-1:30 PM</span>
+                  Patient's heart rate improved with EPINEPHrine. Patient transported to Albert Einstein Medical Center.
+                </p>
+                <a href="#" onclick="up4();" id="button_up" class="arrow-up"><img src="img/up_arrow-45.png"></img></a>
               </div>
             </div>
           </div> <!--swiper-slide-->

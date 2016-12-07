@@ -20,34 +20,6 @@ myApp.onPageInit('all_events', function (page) {
     // run createContentPage func after link was clicked
     var protocol =["3001-Airway Obsrtuction"," 3031A-General Cardiac Arrest","4001-Airway Management ", " 4002-Sedation-Assisted Intubation ","5021A-Bradycardia-Adult"," 5021P-Bradycardia-Pediatric", " 6003-Extremity Trauma"," 6004-Crush Syndrome" ];
     var autocompleteDropdownAll = myApp.autocomplete({
-        input: '#autocomplete-dropdown-all5',
-        openIn: 'dropdown',
-        expandInput: true,
-        source: function (autocomplete, query, render) {
-            var results = [];
-            // Find matched items
-            for (var i = 0; i < protocol.length; i++) {
-                if (protocol[i].toLowerCase().indexOf(query.toLowerCase()) >= 0) results.push(protocol[i]);
-            }
-            // Render items by passing array with result items
-            render(results);
-        }
-    });
-});
-function show(value) {
-   if (value == "3001-Airway Obsrtuction"," 3031A-General Cardiac Arrest","4001-Airway Management ", " 4002-Sedation-Assisted Intubation ","5021A-Bradycardia-Adult"," 5021P-Bradycardia-Pediatric", " 6003-Extremity Trauma"," 6004-Crush Syndrome") {
-     document.getElementById('bradyForm').style.display = 'inline';
-     document.getElementById('narrTitle').style.display = 'block'
-     document.getElementById('emptyPro').style.display = 'none';
-   }
-   else{
-   bradyForm.style.display='none';
-   }
-}
-myApp.onPageInit('empty_screens', function (page) {
-    // run createContentPage func after link was clicked
-    var protocol =["3001-Airway Obsrtuction"," 3031A-General Cardiac Arrest","4001-Airway Management ", " 4002-Sedation-Assisted Intubation ","5021A-Bradycardia-Adult"," 5021P-Bradycardia-Pediatric", " 6003-Extremity Trauma"," 6004-Crush Syndrome" ];
-    var autocompleteDropdownAll = myApp.autocomplete({
         input: '#autocomplete-dropdown-all',
         openIn: 'dropdown',
         expandInput: true,
@@ -62,6 +34,24 @@ myApp.onPageInit('empty_screens', function (page) {
         }
     });
 });
+// myApp.onPageInit('empty_screens', function (page) {
+//     // run createContentPage func after link was clicked
+//     var protocol =["3001-Airway Obsrtuction"," 3031A-General Cardiac Arrest","4001-Airway Management ", " 4002-Sedation-Assisted Intubation ","5021A-Bradycardia-Adult"," 5021P-Bradycardia-Pediatric", " 6003-Extremity Trauma"," 6004-Crush Syndrome" ];
+//     var autocompleteDropdownAll = myApp.autocomplete({
+//         input: '#autocomplete-dropdown-all',
+//         openIn: 'dropdown',
+//         expandInput: true,
+//         source: function (autocomplete, query, render) {
+//             var results = [];
+//             // Find matched items
+//             for (var i = 0; i < protocol.length; i++) {
+//                 if (protocol[i].toLowerCase().indexOf(query.toLowerCase()) >= 0) results.push(protocol[i]);
+//             }
+//             // Render items by passing array with result items
+//             render(results);
+//         }
+//     });
+// });
 // myApp.onPageInit('event-step1', function (page) {
 //     // run createContentPage func after link was clicked
 //     var protocol =["3001-Airway Obsrtuction"," 3031A-General Cardiac Arrest","4001-Airway Management ", " 4002-Sedation-Assisted Intubation ","5021A-Bradycardia-Adult"," 5021P-Bradycardia-Pediatric", " 6003-Extremity Trauma"," 6004-Crush Syndrome" ];
@@ -134,7 +124,17 @@ myApp.onPageInit('empty_screens', function (page) {
 //         }
 //     });
 // });
-
+function showProtocol(value){
+  console.log('hello');
+   if (value == "3001-Airway Obsrtuction"," 3031A-General Cardiac Arrest","4001-Airway Management ", " 4002-Sedation-Assisted Intubation ","5021A-Bradycardia-Adult"," 5021P-Bradycardia-Pediatric", " 6003-Extremity Trauma"," 6004-Crush Syndrome") {
+     document.getElementById('bradyForm').style.display = 'inline';
+     document.getElementById('narrTitle').style.display = 'block'
+     document.getElementById('emptyPro').style.display = 'none';
+   }
+   else{
+   bradyForm.style.display='none';
+   }
+}
 
 function show2(value) {
    if (value == "Vital Signs") {
