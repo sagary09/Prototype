@@ -12,7 +12,8 @@ var mainView = myApp.addView('.view-main', {
 
 
 var mySwiper = myApp.swiper('.swiper-container', {
-    pagination:'.swiper-pagination'
+    pagination:'.swiper-pagination',
+    runCallbacksOnInit:true
   });
 // Callbacks to run specific code for specific pages, for example for About page:
 myApp.onPageInit('all_events', function (page) {
@@ -133,27 +134,26 @@ function up1(){
     console.log('test');
     $$('.page-content').scrollTop(0, 300);
 }
+function up2(){
+    console.log('test3');
+    $$('.page-content').scrollTop(670, 300);
+}
+function onSlideChangeEnd(swiper){
+    console.log('Narrative');
+      $$('.page-content').scrollTop($$('#swiper-slide-narrative').offset().top, 300);
+}
 
 // function click1(){
 //   document.all.section2.scrollIntoView(true);
 // }
 
 
-myApp.onPageInit('all_events',function (page){
-  // $$('#click1').on('click',function(e){
-  //   e.preventDefault();
-  //   console.log('hi');
-  //   $.scrollTo('#section2',1000,{
-  //     over:0.01
-  //   });
-  // })
-
-})
 
 
 
 
 // Callbacks to run specific code for specific pages, for example for About page:
+
 myApp.onPageInit('empty_screens', function (page) {
     // run createContentPage func after link was clicked
     var protocol =["12 Lead", "Contact/Consent" , "CPR", "Defib", "EKG", "EPINEPHrine","Event", "HPI", "Initial Assessment", "Intubate","IO","IV","Narcan","Oxygen", "Reeves","Stair Chair","Stretcher","Sugar","Transport","Vital Signs"];

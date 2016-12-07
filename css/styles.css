@@ -600,6 +600,9 @@ h3 {
   width: 96%;
 }
 /*Narrative*/
+.swiper-slide-narrative {
+  position: static;
+}
 .sync {
   width: 50px;
   height: 50px;
@@ -1029,6 +1032,7 @@ h3 {
   text-transform: uppercase;
 }
 .Y-N_buttons button {
+  margin-bottom: 20px;
   text-align: center;
   width: 100%;
   border-radius: 15px;
@@ -1058,7 +1062,7 @@ h3 {
   color: #312E3E;
 }
 #section2 .Y-N_buttons {
-  padding-top: 25px;
+  padding-top: 40px;
 }
 #section2 .proto_Cont_block {
   margin-top: 30px;
@@ -1096,6 +1100,14 @@ h3 {
   padding-top: 15px;
   padding-bottom: 15px;
   margin-top: 20px;
+}
+#end-of-protocol {
+  font-size: 17px;
+  margin-top: 40px;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 700;
+  color: #898BA8;
+  text-align: center;
 }
 #complt-nar button {
   text-align: center;
