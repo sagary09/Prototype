@@ -1243,6 +1243,16 @@ h3 {
   font-size: 14px;
   text-align: center;
 }
+.popup-note li {
+  padding: 10px;
+}
+.popup-note input {
+  padding: 10px;
+}
+.popup-note img {
+  width: 20px;
+  height: auto;
+}
 /*Registation*/
 .reg-prof-form {
   color: #312E3E;
