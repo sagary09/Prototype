@@ -7,7 +7,7 @@
       <div class="navbar">
         <div class="navbar-inner">
           <div class="left">
-            <a href="#" class="link back">
+            <a href="#" class="link back" data-popup=".popup-notefolder"class="link open-popup">
               <i class="icon-back">
                 <span id="back-text">Notes</span>
               </i>
@@ -19,6 +19,53 @@
             <a href="#" class="link open-panel">
               <i class="edit"></i>
             </a>
+          </div>
+        </div>
+      </div>
+      <div class="popup popup-notefolder">
+        <div class="navbar">
+          <div class="navbar-inner">
+            <div class="left">
+              <a href="#" class="link close-popup">
+                <i class="close"></i>
+              </a>
+            </div>
+            <div class="popup-navTitle">Add New Note </div>
+            <div class="right">
+              <i> </i>
+            </div>
+          </div>
+        </div>
+        <div class="content-block">
+          <div class="list-block">
+            <ul>
+              <li>
+                <div class="item-content">
+                  <div class="item-inner">
+                    <div class="item-input">
+                      <input type="text" placeholder="Note Title">
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <!--second input-->
+              <li>
+                <div class="item-content">
+                  <div class="item-inner">
+                    <div class="item-input">
+                      <input type="text" value="August 23, 2016 PM">
+                    </div>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="content-block">
+          <div class="content-block-inner">
+            <div class="done-button">
+              <a href="notes.html" class="link close-popup"><button class="cases-button">Add</button></a>
+            </div>
           </div>
         </div>
       </div>
